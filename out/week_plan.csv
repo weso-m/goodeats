@@ -1,15 +1,20 @@
 day,slot,card_ids,name,calories,protein_g
-Mon,Lunch,REC_BEEF_FAJITA_RICE_MAIN_001 | REC_GSOYCARROT_SIDE_001,Beefy Fajita Taco Rice + Ginger Soy Carrots,765,49
-Mon,Dinner,REC_EGGMUFFIN_MAIN_001 | REC_RICE_SIDE_001 | REC_GSOYCARROT_SIDE_001,Egg and Cheese on English Muffin + Steamed Rice + Ginger Soy Carrots,660,28
-Tue,Lunch,REC_SAMBAL_CHIK_MAIN_001 | REC_SPINACH_SIDE_001 | REC_BAKEDPOT_SIDE_001,Sambal Marinated Chicken + Steamed Spinach + Baked Potato with Sour Cream and Chives,685,54
-Tue,Dinner,REC_CHILI_MAIN_001 | REC_LENTIL_DAAL_SIDE_001 | REC_GSOYCARROT_SIDE_001,Beef and Bean Chili + Split Lentil Daal + Ginger Soy Carrots,790,56
-Wed,Lunch,REC_CHIK_NOODLE_SOUP_MAIN_001 | REC_SPINACH_SIDE_001 | REC_BAKEDPOT_SIDE_001,Chicken and Vegetable Noodle Soup + Steamed Spinach + Baked Potato with Sour Cream and Chives,655,51
-Wed,Dinner,REC_EGGMUFFIN_MAIN_001 | REC_LENTIL_DAAL_SIDE_001 | REC_RICE_SIDE_001,Egg and Cheese on English Muffin + Split Lentil Daal + Steamed Rice,750,36
-Thu,Lunch,REC_BEEF_FAJITA_RICE_MAIN_001 | REC_GSOYCARROT_SIDE_001,Beefy Fajita Taco Rice + Ginger Soy Carrots,765,49
-Thu,Dinner,REC_EGGMUFFIN_MAIN_001 | REC_GSOYCARROT_SIDE_001 | REC_SPINACH_SIDE_001,Egg and Cheese on English Muffin + Ginger Soy Carrots + Steamed Spinach,505,28
-Fri,Lunch,REC_SAMBAL_CHIK_MAIN_001 | REC_BAKEDPOT_SIDE_001 | REC_GSOYCARROT_SIDE_001,Sambal Marinated Chicken + Baked Potato with Sour Cream and Chives + Ginger Soy Carrots,730,52
-Fri,Dinner,REC_CHILI_MAIN_001 | REC_SPINACH_SIDE_001 | REC_BAKEDPOT_SIDE_001,Beef and Bean Chili + Steamed Spinach + Baked Potato with Sour Cream and Chives,785,53
-Sat,Lunch,REC_CHIK_NOODLE_SOUP_MAIN_001 | REC_LENTIL_DAAL_SIDE_001 | REC_RICE_SIDE_001,Chicken and Vegetable Noodle Soup + Split Lentil Daal + Steamed Rice,770,56
-Sat,Dinner,REC_EGGMUFFIN_MAIN_001 | REC_GSOYCARROT_SIDE_001 | REC_SPINACH_SIDE_001,Egg and Cheese on English Muffin + Ginger Soy Carrots + Steamed Spinach,505,28
-Sun,Lunch,REC_BEEF_FAJITA_RICE_MAIN_001 | REC_GSOYCARROT_SIDE_001,Beefy Fajita Taco Rice + Ginger Soy Carrots,765,49
-Sun,Dinner,REC_EGGMUFFIN_MAIN_001 | REC_BAKEDPOT_SIDE_001 | REC_LENTIL_DAAL_SIDE_001,Egg and Cheese on English Muffin + Baked Potato with Sour Cream and Chives + Split Lentil Daal,770,37
+Mon,Lunch,REC_CHIK_BROC_ZITI_MAIN_001 | REC_RATATOUILLE_SIDE_001,"Chicken, Broccoli and Ziti + Ratatouille",760,49
+Mon,Dinner,REC_CHIK_BROC_ZITI_MAIN_001 | REC_RATATOUILLE_SIDE_001,"Chicken, Broccoli and Ziti + Ratatouille",760,49
+Mon,Snack,REC_ASPARAGUS_SIDE_001,Roasted Asparagus,60,3
+Tue,Lunch,REC_CHIK_BROC_ZITI_MAIN_001 | REC_SPINACH_SIDE_001 | REC_BROCCOLI_SIDE_001,"Chicken, Broccoli and Ziti + Steamed Spinach + Roasted Broccoli",765,56
+Tue,Dinner,REC_SAMBAL_CHIK_MAIN_001 | REC_BROCCOLI_SIDE_001 | REC_SPINACH_SIDE_001,Sambal Marinated Chicken + Roasted Broccoli + Steamed Spinach,585,56
+Tue,Snack,REC_GSOYCARROT_SIDE_001,Ginger Soy Carrots,90,2
+Wed,Lunch,REC_CHIK_BROC_ZITI_MAIN_001 | REC_BROCCOLI_SIDE_001 | REC_SPINACH_SIDE_001,"Chicken, Broccoli and Ziti + Roasted Broccoli + Steamed Spinach",765,56
+Wed,Dinner,REC_SOUVLAKI_MAIN_001 | REC_SPINACH_SIDE_001 | REC_BROCCOLI_SIDE_001,Chicken Souvlaki with Tzatziki + Steamed Spinach + Roasted Broccoli,625,56
+Wed,Snack,REC_SWEETPOT_SIDE_001,Roasted Sweet Potato,180,3
+Thu,Lunch,REC_SOUVLAKI_MAIN_001 | REC_RATATOUILLE_SIDE_001 | REC_SPINACH_SIDE_001,Chicken Souvlaki with Tzatziki + Ratatouille + Steamed Spinach,665,53
+Thu,Dinner,REC_SOUVLAKI_MAIN_001 | REC_RATATOUILLE_SIDE_001 | REC_SPINACH_SIDE_001,Chicken Souvlaki with Tzatziki + Ratatouille + Steamed Spinach,665,53
+Thu,Snack,REC_SHRIMP_MAIN_001,Garlic Herb Shrimp,250,35
+Fri,Lunch,REC_SOUVLAKI_MAIN_001 | REC_BROCCOLI_SIDE_001 | REC_RUSSET_SIDE_001,Chicken Souvlaki with Tzatziki + Roasted Broccoli + Roasted Russet Potatoes,800,57
+Fri,Dinner,REC_CHIK_BROC_ZITI_MAIN_001 | REC_BROCCOLI_SIDE_001 | REC_SPINACH_SIDE_001,"Chicken, Broccoli and Ziti + Roasted Broccoli + Steamed Spinach",765,56
+Sat,Lunch,REC_SAMBAL_CHIK_MAIN_001 | REC_BAKEDPOT_SIDE_001 | REC_RATATOUILLE_SIDE_001,Sambal Marinated Chicken + Baked Potato with Sour Cream and Chives + Ratatouille,800,54
+Sat,Dinner,REC_MUJADARA_MAIN_001 | REC_BROCCOLI_SIDE_001 | REC_RUSSET_SIDE_001,Mujadara (Lentils and Rice) + Roasted Broccoli + Roasted Russet Potatoes,800,30
+Sun,Lunch,REC_CHIK_NOODLE_SOUP_MAIN_001 | REC_RATATOUILLE_SIDE_001 | REC_RUSSET_SIDE_001,Chicken and Vegetable Noodle Soup + Ratatouille + Roasted Russet Potatoes,770,51
+Sun,Dinner,REC_SAMBAL_CHIK_MAIN_001 | REC_RATATOUILLE_SIDE_001 | REC_BROCCOLI_SIDE_001,Sambal Marinated Chicken + Ratatouille + Roasted Broccoli,700,56
+Sun,Snack,REC_GSOYCARROT_SIDE_001,Ginger Soy Carrots,90,2

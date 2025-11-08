@@ -1,69 +1,72 @@
 # Weekly Plan (Lunch • Dinner)
 
-**Mon** — Beefy Fajita Taco Rice + Ginger Soy Carrots • Egg and Cheese on English Muffin + Steamed Rice + Ginger Soy Carrots
+**Mon** — Chicken, Broccoli and Ziti + Ratatouille • Chicken, Broccoli and Ziti + Ratatouille
 
-**Tue** — Sambal Marinated Chicken + Steamed Spinach + Baked Potato with Sour Cream and Chives • Beef and Bean Chili + Split Lentil Daal + Ginger Soy Carrots
+**Tue** — Chicken, Broccoli and Ziti + Steamed Spinach + Roasted Broccoli • Sambal Marinated Chicken + Roasted Broccoli + Steamed Spinach
 
-**Wed** — Chicken and Vegetable Noodle Soup + Steamed Spinach + Baked Potato with Sour Cream and Chives • Egg and Cheese on English Muffin + Split Lentil Daal + Steamed Rice
+**Wed** — Chicken, Broccoli and Ziti + Roasted Broccoli + Steamed Spinach • Chicken Souvlaki with Tzatziki + Steamed Spinach + Roasted Broccoli
 
-**Thu** — Beefy Fajita Taco Rice + Ginger Soy Carrots • Egg and Cheese on English Muffin + Ginger Soy Carrots + Steamed Spinach
+**Thu** — Chicken Souvlaki with Tzatziki + Ratatouille + Steamed Spinach • Chicken Souvlaki with Tzatziki + Ratatouille + Steamed Spinach
 
-**Fri** — Sambal Marinated Chicken + Baked Potato with Sour Cream and Chives + Ginger Soy Carrots • Beef and Bean Chili + Steamed Spinach + Baked Potato with Sour Cream and Chives
+**Fri** — Chicken Souvlaki with Tzatziki + Roasted Broccoli + Roasted Russet Potatoes • Chicken, Broccoli and Ziti + Roasted Broccoli + Steamed Spinach
 
-**Sat** — Chicken and Vegetable Noodle Soup + Split Lentil Daal + Steamed Rice • Egg and Cheese on English Muffin + Ginger Soy Carrots + Steamed Spinach
+**Sat** — Sambal Marinated Chicken + Baked Potato with Sour Cream and Chives + Ratatouille • Mujadara (Lentils and Rice) + Roasted Broccoli + Roasted Russet Potatoes
 
-**Sun** — Beefy Fajita Taco Rice + Ginger Soy Carrots • Egg and Cheese on English Muffin + Baked Potato with Sour Cream and Chives + Split Lentil Daal
+**Sun** — Chicken and Vegetable Noodle Soup + Ratatouille + Roasted Russet Potatoes • Sambal Marinated Chicken + Ratatouille + Roasted Broccoli
 
 
 ## Daily Summary
 
-- Mon: ~1425 kcal (P 77 g / C 154 g / F 49 g). Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
-- Tue: ~1475 kcal (P 110 g / C 123 g / F 55 g). 
-- Wed: ~1405 kcal (P 87 g / C 175 g / F 37 g). Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
-- Thu: ~1270 kcal (P 77 g / C 114 g / F 49 g). Slightly increase meal portions (e.g. +2 oz protein or +100 g potato/veg with olive oil). Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
-- Fri: ~1515 kcal (P 105 g / C 139 g / F 57 g). Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
-- Sat: ~1275 kcal (P 84 g / C 147 g / F 35 g). Slightly increase meal portions (e.g. +2 oz protein or +100 g potato/veg with olive oil). Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
-- Sun: ~1535 kcal (P 86 g / C 162 g / F 54 g). Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
+- Mon: ~1580 kcal (P 101 g / C 155 g / F 55 g). Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
+- Tue: ~1440 kcal (P 114 g / C 107 g / F 58 g). 
+- Wed: ~1570 kcal (P 115 g / C 143 g / F 56 g). 
+- Thu: ~1580 kcal (P 141 g / C 84 g / F 72 g). 
+- Fri: ~1565 kcal (P 113 g / C 147 g / F 55 g). 
+- Sat: ~1600 kcal (P 84 g / C 203 g / F 54 g). Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
+- Sun: ~1560 kcal (P 109 g / C 152 g / F 59 g). Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
 
 ## Grocery List (by section)
 
-### Bakery
-- english muffin — 5.0 whole
 ### Dairy
-- cheddar cheese slice — 5.0 slice
-- egg — 5.0 whole
-- sour cream — 150 g
+- greek yogurt (2%) — 8.0 oz
+- sour cream — 30 g
 ### Meat
-- chicken breast — 454 g
-- chicken thighs — 454 g
-- ground beef (90% lean) — 1135 g
+- chicken breast — 907.4 g
+- chicken breast, diced — 1135 g
+- chicken thighs — 681 g
 ### Oils
-- olive oil — 10 g
-- sesame oil — 20 g
+- olive oil — 72 g
+- sesame oil — 5 g
 ### Pantry
-- chicken broth — 1.0 quart
-- chili powder — 8 g
-- curry powder — 10 g
-- diced tomato — 2.0 can
-- diced tomatoes — 1.0 can
-- egg noodles, dry — 80 g
-- fajita seasoning — 15 g
-- kidney beans, canned — 1.0 can
-- red lentils, dry — 360 g
-- salt — 5 g
-- sambal oelek — 20 g
-- soy sauce — 70 g
-- water — 555 g
-- white rice, dry — 555 g
+- black pepper — 1 g
+- brown lentils, dry — 90 g
+- chicken broth — 0.5 quart
+- egg noodles, dry — 40 g
+- salt — 10 g
+- sambal oelek — 30 g
+- soy sauce — 30 g
+- white rice, dry — 92 g
+- ziti pasta, dry — 462 g
 ### Produce
-- bell pepper, sliced — 1.5 whole
-- carrot, chopped — 2.0 whole
-- carrots, sliced — 1816 g
-- celery, chopped — 2.0 stalk
-- chives — 12 g
-- garlic, minced — 10 g
-- ginger, grated — 20 g
-- onion, diced — 2.0 whole
-- onion, sliced — 1.5 whole
-- russet potato — 5.0 whole
-- spinach — 2.5 bunch
+- asparagus — 120 g
+- bell pepper — 10.5 oz
+- broccoli florets — 2.5 head
+- carrot, chopped — 1.0 whole
+- carrots, sliced — 454 g
+- celery, chopped — 1.0 stalk
+- chives — 2 g
+- cucumber — 6.0 oz
+- eggplant — 14.0 oz
+- garlic — 3 g
+- garlic, minced — 12 g
+- ginger, grated — 5 g
+- lemon juice — 8 g
+- onion, diced — 0.5 whole
+- onion, sliced — 1.0 whole
+- russet potato — 750 g
+- spinach — 3.5 bunch
+- sweet potato — 200 g
+- tomato — 10.5 oz
+- zucchini — 14.0 oz
+### Seafood
+- raw shrimp, peeled & deveined — 170 g

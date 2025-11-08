@@ -1,35 +1,38 @@
 item,qty,unit,grocery_section
-english muffin,5.0,whole,bakery
-cheddar cheese slice,5.0,slice,dairy
-egg,5.0,whole,dairy
-sour cream,150,g,dairy
-chicken breast,454,g,meat
-chicken thighs,454,g,meat
-ground beef (90% lean),1135,g,meat
-olive oil,10,g,oils
-sesame oil,20,g,oils
-chicken broth,1.0,quart,pantry
-chili powder,8,g,pantry
-curry powder,10,g,pantry
-diced tomato,2.0,can,pantry
-diced tomatoes,1.0,can,pantry
-"egg noodles, dry",80,g,pantry
-fajita seasoning,15,g,pantry
-"kidney beans, canned",1.0,can,pantry
-"red lentils, dry",360,g,pantry
-salt,5,g,pantry
-sambal oelek,20,g,pantry
-soy sauce,70,g,pantry
-water,555,g,pantry
-"white rice, dry",555,g,pantry
-"bell pepper, sliced",1.5,whole,produce
-"carrot, chopped",2.0,whole,produce
-"carrots, sliced",1816,g,produce
-"celery, chopped",2.0,stalk,produce
-chives,12,g,produce
-"garlic, minced",10,g,produce
-"ginger, grated",20,g,produce
-"onion, diced",2.0,whole,produce
-"onion, sliced",1.5,whole,produce
-russet potato,5.0,whole,produce
-spinach,2.5,bunch,produce
+greek yogurt (2%),8.0,oz,dairy
+sour cream,30,g,dairy
+chicken breast,907.4,g,meat
+"chicken breast, diced",1135,g,meat
+chicken thighs,681,g,meat
+olive oil,72,g,oils
+sesame oil,5,g,oils
+black pepper,1,g,pantry
+"brown lentils, dry",90,g,pantry
+chicken broth,0.5,quart,pantry
+"egg noodles, dry",40,g,pantry
+salt,10,g,pantry
+sambal oelek,30,g,pantry
+soy sauce,30,g,pantry
+"white rice, dry",92,g,pantry
+"ziti pasta, dry",462,g,pantry
+asparagus,120,g,produce
+bell pepper,10.5,oz,produce
+broccoli florets,2.5,head,produce
+"carrot, chopped",1.0,whole,produce
+"carrots, sliced",454,g,produce
+"celery, chopped",1.0,stalk,produce
+chives,2,g,produce
+cucumber,6.0,oz,produce
+eggplant,14.0,oz,produce
+garlic,3,g,produce
+"garlic, minced",12,g,produce
+"ginger, grated",5,g,produce
+lemon juice,8,g,produce
+"onion, diced",0.5,whole,produce
+"onion, sliced",1.0,whole,produce
+russet potato,750,g,produce
+spinach,3.5,bunch,produce
+sweet potato,200,g,produce
+tomato,10.5,oz,produce
+zucchini,14.0,oz,produce
+"raw shrimp, peeled & deveined",170,g,seafood

@@ -57,7 +57,6 @@ class Macros:
     carbs_g: float
     fat_g: float
 
-
 @dc.dataclass
 class RecipeCard:
     id: str
@@ -79,6 +78,7 @@ class RecipeCard:
     ingredients: List[Ingredient]
     steps: List[str]
     notes: List[str]
+    meal_slots: List[str]  # NEW: ["breakfast","lunch","dinner","snack"] options
 
     @staticmethod
     def from_dict(d: Dict) -> "RecipeCard":
@@ -104,7 +104,7 @@ class RecipeCard:
         return RecipeCard(
             id=str(d["id"]),
             name=str(d["name"]),
-            role=str(d.get("role", "main")),  # default to main for legacy cards
+            role=str(d.get("role", "main")),
             servings_default=int(d.get("servings_default", 2)),
             portion_size_note=str(d.get("portion_size_note", "")),
             macros_per_serving=macros,
@@ -121,8 +121,8 @@ class RecipeCard:
             ingredients=ings,
             steps=[str(s) for s in d.get("steps", [])],
             notes=[str(n) for n in d.get("notes", [])],
+            meal_slots=list(d.get("meal_slots", [])),  # NEW
         )
-
 
 @dc.dataclass
 class Targets:
@@ -131,9 +131,15 @@ class Targets:
     protein_min_g: float = 110
     carbs_max_g: Optional[float] = None
     fat_max_g: Optional[float] = None
-    # desired range of unique recipes per week (mains + sides)
     min_unique_main_meals: Optional[int] = None
     max_unique_main_meals: Optional[int] = None
+
+    # NEW: daily structure
+    meal_slots: List[str] = dc.field(default_factory=lambda: ["Lunch", "Dinner"])
+    meals_per_day: int = 2
+    include_snacks: bool = False
+    max_snacks_per_day: int = 0
+
 
 
 @dc.dataclass
@@ -200,6 +206,23 @@ def load_targets(path: Optional[str]) -> Targets:
         ),
     )
 
+    # NEW: meal structure config
+    meal_slots = data.get("meal_slots")
+    if isinstance(meal_slots, list) and meal_slots:
+        t.meal_slots = [str(s) for s in meal_slots]
+    # meals_per_day: default to len(meal_slots) if provided, else keep default
+    if "meals_per_day" in data:
+        t.meals_per_day = max(1, int(data["meals_per_day"]))
+    else:
+        t.meals_per_day = max(1, len(t.meal_slots))
+
+    t.include_snacks = bool(data.get("include_snacks", False))
+    t.max_snacks_per_day = int(data.get(
+        "max_snacks_per_day",
+        0 if not t.include_snacks else 1
+    ))
+
+
     # Normalize unique recipe counts
     min_u = t.min_unique_main_meals
     max_u = t.max_unique_main_meals
@@ -221,9 +244,11 @@ def load_targets(path: Optional[str]) -> Targets:
         f"[info] Targets loaded from {cfg_path}: "
         f"kcal {t.calories_min}-{t.calories_max}, "
         f"protein ≥{t.protein_min_g} g, "
-        f"unique recipes {t.min_unique_main_meals}-{t.max_unique_main_meals}"
+        f"unique recipes {t.min_unique_main_meals}-{t.max_unique_main_meals}, "
+        f"meals/day {t.meals_per_day}, "
+        f"slots {t.meal_slots}, "
+        f"snacks: {t.include_snacks} (max {t.max_snacks_per_day}/day)"
     )
-
     return t
 
 
@@ -309,6 +334,38 @@ def enforce_variety(pool: List[str], cards: Dict[str, RecipeCard]) -> None:
             replacement = collections.Counter(non_beef).most_common(1)[0][0]
             for idx in red_meat_indices[1:]:
                 pool[idx] = replacement
+def choose_main_for_slot(
+    rnd: random.Random,
+    mains: List[RecipeCard],
+    slot_name: str,
+    day_cal_so_far: float,
+    targets: Targets,
+) -> RecipeCard:
+    """
+    Pick a main for a given slot, preferring:
+    - cards that support this slot,
+    - and keep the day <= calories_max when possible.
+    Falls back to the lightest compatible option if all overshoot.
+    """
+    slot_l = slot_name.lower()
+
+    compatible = [m for m in mains if card_supports_slot(m, slot_name, is_snack=False)]
+    if not compatible:
+        compatible = mains  # fallback: any main
+
+    # Try to find mains that don't blow past the max
+    within: List[RecipeCard] = []
+    if targets.calories_max:
+        for m in compatible:
+            if day_cal_so_far + m.macros_per_serving.calories <= targets.calories_max:
+                within.append(m)
+
+    if within:
+        return rnd.choice(within)
+
+    # If impossible to stay under max, pick the lightest compatible
+    return min(compatible, key=lambda m: m.macros_per_serving.calories)
+
 
 def build_week_plan_manual(selection: Dict[str, int],
                            cards: Dict[str, RecipeCard],
@@ -425,6 +482,28 @@ def build_week_plan_manual(selection: Dict[str, int],
 
     return slots
 
+def generate_week_slots(targets: Targets) -> List[Tuple[int, str, bool]]:
+    """
+    Returns list of (day, slot_name, is_snack) for the whole week
+    based on targets.
+    """
+    slots: List[Tuple[int, str, bool]] = []
+    base_slots = targets.meal_slots or ["Lunch", "Dinner"]
+    meals_per_day = max(1, targets.meals_per_day)
+
+    for day in range(7):
+        # Main meals
+        for i in range(meals_per_day):
+            slot_name = base_slots[i % len(base_slots)]
+            slots.append((day, slot_name, False))
+
+        # Snacks
+        if targets.include_snacks and targets.max_snacks_per_day > 0:
+            for s in range(targets.max_snacks_per_day):
+                name = "Snack" if targets.max_snacks_per_day == 1 else f"Snack{s+1}"
+                slots.append((day, name, True))
+
+    return slots
 
 def build_week_plan(pool: List[str], cards: Dict[str, RecipeCard], seed: int = 42) -> List[MealSlot]:
     """
@@ -462,126 +541,187 @@ def build_week_plan(pool: List[str], cards: Dict[str, RecipeCard], seed: int = 4
 
 
 # ---------- Auto-Planning (Mains + Sides) ----------
-def build_auto_week_plan(cards: Dict[str, RecipeCard], targets: Targets, seed: int) -> List[MealSlot]:
-    """
-    Auto mode:
+def card_supports_slot(card: RecipeCard, slot_name: str, is_snack: bool) -> bool:
+    slots = [s.lower() for s in (card.meal_slots or [])]
+    slot_name_l = slot_name.lower()
 
-    - Interprets min_unique_main_meals / max_unique_main_meals as the desired
-      range of UNIQUE MAINS (not mains+sides).
-    - Chooses that many mains from eligible mains.
-    - Chooses a small pool of sides from eligible sides.
-    - For each of 14 meals:
-        * picks a main from chosen mains
-        * adds 0–2 sides (if helpful) to land in ~450–800 kcal band.
-    - Reuses this small set across the week for batching.
-    """
+    if is_snack:
+        return "snack" in slots
+
+    # For main meals: allow if declared, else fallback to legacy behavior
+    if slots:
+        # match breakfast/lunch/dinner by name
+        if slot_name_l == "breakfast":
+            return "breakfast" in slots
+        if slot_name_l == "lunch":
+            return "lunch" in slots or "dinner" in slots
+        if slot_name_l == "dinner":
+            return "dinner" in slots or "lunch" in slots
+    else:
+        # legacy cards: treat mains/sides as lunch+dinner
+        return slot_name_l in ("lunch", "dinner")
+
+    return False
+
+def build_auto_week_plan(cards: Dict[str, RecipeCard], targets: Targets, seed: int) -> List[MealSlot]:
     rnd = random.Random(seed)
 
-    # Eligible mains
-    mains = [
+    # Build weekly slot schedule (configured via targets.yaml)
+    week_slots = generate_week_slots(targets)
+    if not week_slots:
+        raise ValueError("No meal slots configured in targets.yaml (meal_slots/meals_per_day).")
+
+    # Eligible pools
+    mains_all = [
         c for c in cards.values()
         if c.role in ("main", "both")
         and c.batch_friendly
-        and 300 <= c.macros_per_serving.calories <= 800
-        and any(mt in ("lunch", "dinner") for mt in c.meal_types)
+        and 250 <= c.macros_per_serving.calories <= 800
     ]
-
-    # Eligible sides
-    sides = [
+    sides_all = [
         c for c in cards.values()
         if c.role in ("side", "both")
         and c.batch_friendly
+        and 40 <= c.macros_per_serving.calories <= 300
+    ]
+    snacks_all = [
+        c for c in cards.values()
+        if c.batch_friendly
+        and "snack" in [s.lower() for s in (c.meal_slots or [])]
         and 50 <= c.macros_per_serving.calories <= 300
-        and "side" in c.meal_types
     ]
 
-    if not mains:
-        raise ValueError(
-            "Auto mode: no eligible mains found. "
-            "Check role=='main'/'both', batch_friendly=True, "
-            "300–800 kcal, and meal_types includes 'lunch' or 'dinner'."
-        )
+    if not mains_all:
+        raise ValueError("Auto mode: no eligible mains available.")
 
-    # --- Determine how many unique mains to use ---
-    # Treat targets.min/max_unique_main_meals as constraints on mains only.
-    min_m = targets.min_unique_main_meals or 2
-    max_m = targets.max_unique_main_meals or min_m
+    # --- Unique mains selection (similar to before) ---
+    total_available = len(mains_all) + len(sides_all)
+    min_u = targets.min_unique_main_meals or 2
+    max_u = targets.max_unique_main_meals or max(min_u, 3)
 
-    min_m = max(1, int(min_m))
-    max_m = max(min_m, int(max_m))
-    max_m = min(max_m, len(mains))        # cannot exceed available mains
-    min_m = min(min_m, max_m)
+    min_u = max(1, min_u)
+    max_u = max(min_u, max_u)
+    max_u = min(max_u, total_available) if total_available > 0 else max_u
 
-    if max_m < 1:
-        # Failsafe: at least 1 main
-        max_m = min(1, len(mains))
-        min_m = max_m
+    n_unique = rnd.randint(min_u, max_u)
+    n_mains = max(1, min(len(mains_all), n_unique))
+    chosen_mains = rnd.sample(mains_all, n_mains)
 
-    n_mains = rnd.randint(min_m, max_m) if max_m > 0 else 1
-    n_mains = max(1, min(n_mains, len(mains)))
-
-    chosen_mains = rnd.sample(mains, n_mains)
-
-    # --- Choose supporting sides ---
     chosen_sides: List[RecipeCard] = []
-    if sides:
-        # Keep variety but not chaos: cap sides to a small pool
-        # e.g. up to 2 * n_mains, but at least 1 if any exist.
-        max_sides = min(len(sides), max(1, 2 * n_mains))
+    if sides_all:
+        max_sides = min(len(sides_all), max(1, 2 * n_mains))
         n_sides = rnd.randint(1, max_sides)
-        chosen_sides = rnd.sample(sides, n_sides)
+        chosen_sides = rnd.sample(sides_all, n_sides)
+
+    if targets.include_snacks and week_slots and not snacks_all:
+        print("[warn] Snack slots configured but no snack-eligible cards (meal_slots includes 'snack').")
 
     print(
         f"[info] Auto mode using {len(chosen_mains)} mains and "
-        f"{len(chosen_sides)} sides for batching."
+        f"{len(chosen_sides)} sides. Snacks pool: {len(snacks_all)}."
     )
-    if len(chosen_mains) == 1:
-        print(
-            "[warn] Only one eligible main selected; all meals will reuse this main. "
-            "Add more eligible mains or adjust filters for more variety."
-        )
 
-    # --- Build 14 meal slots ---
-    total_slots = 14  # 7 days * 2 meals
+    # Track per-day totals while building
+    day_totals = {d: 0.0 for d in range(7)}
     slots: List[MealSlot] = []
-    day = 0
 
-    for i in range(total_slots):
-        slot_name = "Lunch" if i % 2 == 0 else "Dinner"
+    for (day, slot_name, is_snack) in week_slots:
+        # --- Snack slots ---
+        if is_snack:
+            if not snacks_all:
+                continue  # nothing snack-safe, skip quietly
 
-        # Always pick a main from the chosen mains
-        main = rnd.choice(chosen_mains)
+            # Prefer snacks that don't push us over calories_max
+            allowed_snacks = snacks_all
+            snack = None
+            if targets.calories_max:
+                under = [
+                    s for s in allowed_snacks
+                    if day_totals[day] + s.macros_per_serving.calories <= targets.calories_max
+                ]
+                if under:
+                    snack = rnd.choice(under)
+
+            if snack is None:
+                # If we're already under min, we can allow one anyway, but avoid absurd overshoot
+                if targets.calories_min and day_totals[day] < targets.calories_min:
+                    snack = min(
+                        allowed_snacks,
+                        key=lambda s: s.macros_per_serving.calories
+                    )
+
+            if snack is None:
+                continue  # no reasonable snack to add
+
+            cal = snack.macros_per_serving.calories
+            p = snack.macros_per_serving.protein_g
+            c = snack.macros_per_serving.carbs_g
+            f = snack.macros_per_serving.fat_g
+
+            day_totals[day] += cal
+
+            slots.append(
+                MealSlot(
+                    day=day,
+                    slot=slot_name,
+                    card_ids=[snack.id],
+                    calories=cal,
+                    protein_g=p,
+                    carbs_g=c,
+                    fat_g=f,
+                )
+            )
+            continue
+
+        # --- Main meals (Breakfast/Lunch/Dinner style) ---
+        # Choose a main that fits this slot and (if possible) stays under daily max
+        main = choose_main_for_slot(rnd, chosen_mains, slot_name, day_totals[day], targets)
+
         comp_ids = [main.id]
         cal = main.macros_per_serving.calories
         p = main.macros_per_serving.protein_g
         c = main.macros_per_serving.carbs_g
         f = main.macros_per_serving.fat_g
 
-        # Add up to 2 sides to land roughly in 450–800 kcal
+        # Attach sides carefully: try not to blow past daily max
         if chosen_sides:
-            side_candidates = rnd.sample(chosen_sides, len(chosen_sides))
+            side_candidates = chosen_sides[:]
+            rnd.shuffle(side_candidates)
+
             for side in side_candidates:
-                if len(comp_ids) >= 3:  # main + up to 2 sides
+                if len(comp_ids) >= 3:
                     break
+                if not card_supports_slot(side, slot_name, is_snack=False):
+                    continue
 
-                new_cal = cal + side.macros_per_serving.calories
+                side_cal = side.macros_per_serving.calories
+                new_meal_cal = cal + side_cal
+                new_day_cal = day_totals[day] + side_cal
 
-                # If we're below 450, adding is good as long as we don't blow past 800.
-                # If we're already between 450–800, only add if we stay ≤800.
-                if cal < 450:
-                    if new_cal <= 800:
-                        comp_ids.append(side.id)
-                        cal = new_cal
-                        p += side.macros_per_serving.protein_g
-                        c += side.macros_per_serving.carbs_g
-                        f += side.macros_per_serving.fat_g
-                else:
-                    if new_cal <= 800:
-                        comp_ids.append(side.id)
-                        cal = new_cal
-                        p += side.macros_per_serving.protein_g
-                        c += side.macros_per_serving.carbs_g
-                        f += side.macros_per_serving.fat_g
+                # Aim for 450-800 kcal per main meal, but respect daily max where possible
+                within_meal_band = (
+                    (cal < 450 and new_meal_cal <= 800) or
+                    (450 <= cal <= 800 and new_meal_cal <= 800)
+                )
+
+                if not within_meal_band:
+                    continue
+
+                # If calories_max set, don't exceed it unless we're way under min and need the bump
+                if targets.calories_max:
+                    if new_day_cal > targets.calories_max:
+                        # Allow slight overshoot only if we're well under min and this helps
+                        if not (targets.calories_min and day_totals[day] < targets.calories_min and new_day_cal <= targets.calories_max * 1.05):
+                            continue
+
+                # Attach side
+                comp_ids.append(side.id)
+                cal = new_meal_cal
+                p += side.macros_per_serving.protein_g
+                c += side.macros_per_serving.carbs_g
+                f += side.macros_per_serving.fat_g
+
+        day_totals[day] += cal
 
         slots.append(
             MealSlot(
@@ -595,8 +735,12 @@ def build_auto_week_plan(cards: Dict[str, RecipeCard], targets: Targets, seed: i
             )
         )
 
-        if slot_name == "Dinner":
-            day += 1
+    # Soft validation / debug
+    for d in range(7):
+        dt = day_totals[d]
+        if targets.calories_max and dt > targets.calories_max * 1.05:
+            print(f"[warn] Day {d} total {dt:.0f} kcal exceeds calories_max; "
+                  "check meal sizes/targets — may be mathematically impossible to stay under.")
 
     return slots
 
