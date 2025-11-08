@@ -1,0 +1,52 @@
+id: REC_CHIK_BROC_ZITI_MAIN_001
+name: Chicken, Broccoli and Ziti
+role: main
+servings_default: 2
+portion_size_note: 1 lb chicken + 1 head broccoli + 2 cups cooked ziti
+macros_per_serving:
+  calories: 600
+  protein_g: 45
+  carbs_g: 55
+  fat_g: 18
+primary_carb:
+  - pasta
+protein_source:
+  - chicken
+veg:
+  - broccoli
+allergens:
+  - gluten
+meal_types:
+  - lunch
+  - dinner
+meal_freq_cap_per_week: 1
+prep_time_min: 15
+cook_time_min: 20
+batch_friendly: true
+reheat_method:
+  - microwave
+ingredients:
+  - item: chicken breast, diced
+    qty: 454
+    unit: g
+    grocery_section: meat
+  - item: ziti pasta, dry
+    qty: 185
+    unit: g
+    grocery_section: pantry
+  - item: broccoli florets
+    qty: 1
+    unit: head
+    grocery_section: produce
+  - item: olive oil
+    qty: 15
+    unit: g
+    grocery_section: oils
+  - item: garlic, minced
+    qty: 5
+    unit: g
+    grocery_section: produce
+steps:
+  - Cook pasta and broccoli; toss with cooked chicken and garlic oil.
+notes:
+  - Add parmesan or chili flakes if desired.

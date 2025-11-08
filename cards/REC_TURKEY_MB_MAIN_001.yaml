@@ -1,0 +1,49 @@
+id: REC_TURKEY_MB_MAIN_001
+name: Turkey Meatballs
+role: main
+servings_default: 2
+portion_size_note: ~6 oz cooked turkey per serving
+macros_per_serving:
+  calories: 340
+  protein_g: 38
+  carbs_g: 8
+  fat_g: 16
+primary_carb:
+  - veg
+protein_source:
+  - turkey
+veg:
+  - onion
+allergens:
+  - egg
+meal_types:
+  - lunch
+  - dinner
+meal_freq_cap_per_week: 3
+prep_time_min: 20
+cook_time_min: 20
+batch_friendly: true
+reheat_method:
+  - oven
+  - microwave
+ingredients:
+  - item: ground turkey (93%)
+    qty: 12
+    unit: oz
+    grocery_section: meat
+  - item: egg
+    qty: 1
+    unit: whole
+    grocery_section: dairy
+  - item: onion
+    qty: 2
+    unit: oz
+    grocery_section: produce
+  - item: breadcrumbs (light)
+    qty: 0.5
+    unit: oz
+    grocery_section: bakery
+steps:
+  - Mix, form, and bake meatballs.
+notes:
+  - Serve with veg + carb sides.

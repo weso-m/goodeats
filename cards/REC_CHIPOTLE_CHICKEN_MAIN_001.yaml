@@ -1,0 +1,46 @@
+id: REC_CHIPOTLE_CHICKEN_MAIN_001
+name: Chipotle Marinated Chicken
+role: main
+servings_default: 2
+portion_size_note: 6 oz chicken per serving
+macros_per_serving:
+  calories: 310
+  protein_g: 46
+  carbs_g: 4
+  fat_g: 11
+primary_carb: []
+protein_source:
+  - chicken
+veg: []
+allergens: []
+meal_types:
+  - lunch
+  - dinner
+meal_freq_cap_per_week: 3
+prep_time_min: 15
+cook_time_min: 15
+batch_friendly: true
+reheat_method:
+  - skillet
+  - microwave
+ingredients:
+  - item: chicken breast
+    qty: 12
+    unit: oz
+    grocery_section: meat
+  - item: chipotle in adobo
+    qty: 1
+    unit: tbsp
+    grocery_section: international
+  - item: lime juice
+    qty: 1
+    unit: tbsp
+    grocery_section: produce
+  - item: olive oil
+    qty: 1
+    unit: tbsp
+    grocery_section: oils
+steps:
+  - Marinate chicken in chipotle, lime, oil; grill or roast.
+notes:
+  - Serve with lime rice, potatoes, or veg sides.

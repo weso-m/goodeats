@@ -1,0 +1,56 @@
+id: REC_CAESAR_MAIN_001
+name: High-Protein Chicken Caesar Salad
+role: main
+servings_default: 2
+portion_size_note: 6 oz grilled chicken, large bowl romaine, light caesar, parmesan
+macros_per_serving:
+  calories: 520
+  protein_g: 50
+  carbs_g: 18
+  fat_g: 28
+primary_carb:
+  - veg
+protein_source:
+  - chicken
+veg:
+  - romaine
+  - cherry tomato
+allergens:
+  - dairy
+  - egg
+  - fish
+meal_types:
+  - lunch
+  - dinner
+meal_freq_cap_per_week: 3
+prep_time_min: 15
+cook_time_min: 10
+batch_friendly: true
+reheat_method:
+  - cold
+ingredients:
+  - item: chicken breast
+    qty: 12
+    unit: oz
+    grocery_section: meat
+  - item: romaine lettuce
+    qty: 8
+    unit: oz
+    grocery_section: produce
+  - item: cherry tomatoes
+    qty: 4
+    unit: oz
+    grocery_section: produce
+  - item: caesar dressing (light)
+    qty: 4
+    unit: tbsp
+    grocery_section: condiments
+  - item: parmesan cheese
+    qty: 1.5
+    unit: oz
+    grocery_section: dairy
+steps:
+  - Grill or pan-sear chicken, slice.
+  - Toss romaine, tomatoes, dressing, parmesan; top with chicken.
+notes:
+  - Adjust dressing or add/skip croutons to fine-tune calories.

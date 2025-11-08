@@ -1,0 +1,55 @@
+id: REC_EGGROLL_MAIN_001
+name: Shrimp & Pork Eggroll Bowl
+role: main
+servings_default: 2
+portion_size_note: Hearty bowl with shrimp, pork, veg
+macros_per_serving:
+  calories: 480
+  protein_g: 40
+  carbs_g: 28
+  fat_g: 22
+primary_carb:
+  - veg
+protein_source:
+  - shrimp
+  - pork
+veg:
+  - cabbage
+  - carrot
+allergens:
+  - shellfish
+meal_types:
+  - lunch
+  - dinner
+meal_freq_cap_per_week: 2
+prep_time_min: 25
+cook_time_min: 25
+batch_friendly: true
+reheat_method:
+  - skillet
+  - microwave
+ingredients:
+  - item: shrimp
+    qty: 6
+    unit: oz
+    grocery_section: seafood
+  - item: ground pork (lean)
+    qty: 6
+    unit: oz
+    grocery_section: meat
+  - item: cabbage
+    qty: 6
+    unit: oz
+    grocery_section: produce
+  - item: carrot
+    qty: 2
+    unit: oz
+    grocery_section: produce
+  - item: soy sauce / seasoning
+    qty: 1.5
+    unit: tbsp
+    grocery_section: international
+steps:
+  - Cook pork and shrimp; add shredded veg and seasoning.
+notes:
+  - Serve as a bowl; macros assume no wrapper.

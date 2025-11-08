@@ -1,0 +1,46 @@
+id: REC_LENTIL_DAAL_SIDE_001
+name: Split Lentil Daal
+role: side
+servings_default: 2
+portion_size_note: 1 cup cooked lentils per serving
+macros_per_serving:
+  calories: 180
+  protein_g: 10
+  carbs_g: 24
+  fat_g: 4
+primary_carb:
+  - lentils
+protein_source:
+  - lentils
+veg:
+  - tomato
+allergens: []
+meal_types:
+  - side
+meal_freq_cap_per_week: 1
+prep_time_min: 10
+cook_time_min: 25
+batch_friendly: true
+reheat_method:
+  - microwave
+ingredients:
+  - item: red lentils, dry
+    qty: 180
+    unit: g
+    grocery_section: pantry
+  - item: diced tomato
+    qty: 1
+    unit: can
+    grocery_section: pantry
+  - item: garlic, minced
+    qty: 5
+    unit: g
+    grocery_section: produce
+  - item: curry powder
+    qty: 5
+    unit: g
+    grocery_section: pantry
+steps:
+  - Simmer lentils with tomato, garlic, and curry until soft.
+notes:
+  - Add cilantro or lemon juice before serving.

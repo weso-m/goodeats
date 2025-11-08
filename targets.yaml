@@ -1,0 +1,11 @@
+calories_min: 1400
+calories_max: 1600
+protein_min_g: 110
+
+# Optional ceilings
+# carbs_max_g: 160
+# fat_max_g: 60
+
+# NEW: how many different main recipes to cook in auto mode
+min_unique_main_meals: 4
+max_unique_main_meals: 7

@@ -1,0 +1,43 @@
+id: REC_BAKEDPOT_SIDE_001
+name: Baked Potato with Sour Cream and Chives
+role: side
+servings_default: 2
+portion_size_note: 1 medium potato per serving
+macros_per_serving:
+  calories: 220
+  protein_g: 5
+  carbs_g: 40
+  fat_g: 6
+primary_carb:
+  - potato
+protein_source: []
+veg:
+  - potato
+allergens:
+  - dairy
+meal_types:
+  - side
+meal_freq_cap_per_week: 1
+prep_time_min: 5
+cook_time_min: 45
+batch_friendly: true
+reheat_method:
+  - microwave
+ingredients:
+  - item: russet potato
+    qty: 2
+    unit: whole
+    grocery_section: produce
+  - item: sour cream
+    qty: 60
+    unit: g
+    grocery_section: dairy
+  - item: chives
+    qty: 5
+    unit: g
+    grocery_section: produce
+steps:
+  - Bake potatoes until tender.
+  - Top with sour cream and chives.
+notes:
+  - Add butter or shredded cheese if desired.

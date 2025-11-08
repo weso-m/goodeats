@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Meal Plan",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "mealplan_generator.py",
+        "--cards_dir",
+        "./cards",
+        "--selection",
+        "./weekly_selection.yaml",
+        "--out_dir",
+        "./out",
+        "--seed",
+        "42"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}

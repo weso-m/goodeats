@@ -1,0 +1,60 @@
+id: REC_SINGAPORE_NOODLES_MAIN_001
+name: Singapore Noodles
+role: main
+servings_default: 2
+portion_size_note: ¾ lb shrimp + rice noodles + vegetables
+macros_per_serving:
+  calories: 550
+  protein_g: 33
+  carbs_g: 60
+  fat_g: 15
+primary_carb:
+  - rice noodles
+protein_source:
+  - shrimp
+veg:
+  - bell pepper
+  - cabbage
+  - onion
+allergens:
+  - shellfish
+meal_types:
+  - lunch
+  - dinner
+meal_freq_cap_per_week: 1
+prep_time_min: 15
+cook_time_min: 20
+batch_friendly: true
+reheat_method:
+  - microwave
+ingredients:
+  - item: shrimp, peeled and deveined
+    qty: 340
+    unit: g
+    grocery_section: seafood
+  - item: rice noodles, dry
+    qty: 120
+    unit: g
+    grocery_section: pantry
+  - item: bell pepper, sliced
+    qty: 1
+    unit: whole
+    grocery_section: produce
+  - item: cabbage, shredded
+    qty: 150
+    unit: g
+    grocery_section: produce
+  - item: onion, sliced
+    qty: 1
+    unit: whole
+    grocery_section: produce
+  - item: curry powder
+    qty: 5
+    unit: g
+    grocery_section: pantry
+steps:
+  - Cook noodles and drain.
+  - Stir-fry shrimp and vegetables with curry powder.
+  - Toss with noodles to coat evenly.
+notes:
+  - Substitute tofu for shrimp if desired.

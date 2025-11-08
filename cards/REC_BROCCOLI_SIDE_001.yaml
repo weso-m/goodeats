@@ -1,0 +1,37 @@
+id: REC_BROCCOLI_SIDE_001
+name: Roasted Broccoli
+role: side
+servings_default: 2
+portion_size_note: 200-300 g per serving
+macros_per_serving:
+  calories: 120
+  protein_g: 7
+  carbs_g: 12
+  fat_g: 6
+primary_carb: []
+protein_source: []
+veg:
+  - broccoli
+allergens: []
+meal_types:
+  - side
+meal_freq_cap_per_week: 5
+prep_time_min: 5
+cook_time_min: 20
+batch_friendly: true
+reheat_method:
+  - oven
+  - microwave
+ingredients:
+  - item: broccoli florets
+    qty: 500
+    unit: g
+    grocery_section: produce
+  - item: olive oil
+    qty: 1
+    unit: tbsp
+    grocery_section: oils
+steps:
+  - Toss broccoli with oil, salt; roast at 425°F until browned.
+notes:
+  - Great with any protein.

@@ -1,0 +1,37 @@
+id: REC_SPINACH_SIDE_001
+name: Steamed Spinach
+role: side
+servings_default: 2
+portion_size_note: 1 bunch spinach (~200 g total)
+macros_per_serving:
+  calories: 45
+  protein_g: 4
+  carbs_g: 4
+  fat_g: 1
+primary_carb: []
+protein_source: []
+veg:
+  - spinach
+allergens: []
+meal_types:
+  - side
+meal_freq_cap_per_week: 1
+prep_time_min: 5
+cook_time_min: 5
+batch_friendly: true
+reheat_method:
+  - microwave
+ingredients:
+  - item: spinach
+    qty: 1
+    unit: bunch
+    grocery_section: produce
+  - item: salt
+    qty: 2
+    unit: g
+    grocery_section: pantry
+steps:
+  - Steam spinach until wilted.
+  - Season lightly with salt.
+notes:
+  - Add lemon juice or olive oil drizzle.

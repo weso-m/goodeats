@@ -1,0 +1,47 @@
+id: REC_EGGMUFFIN_MAIN_001
+name: Egg and Cheese on English Muffin
+role: main
+servings_default: 2
+portion_size_note: 1 English muffin + 1 egg + 1 cheese slice per serving
+macros_per_serving:
+  calories: 370
+  protein_g: 22
+  carbs_g: 31
+  fat_g: 16
+primary_carb:
+  - bread
+protein_source:
+  - egg
+  - cheese
+veg: []
+allergens:
+  - egg
+  - dairy
+  - gluten
+meal_types:
+  - breakfast
+  - lunch
+meal_freq_cap_per_week: 2
+prep_time_min: 5
+cook_time_min: 10
+batch_friendly: true
+reheat_method:
+  - microwave
+ingredients:
+  - item: English muffin
+    qty: 2
+    unit: whole
+    grocery_section: bakery
+  - item: egg
+    qty: 2
+    unit: whole
+    grocery_section: dairy
+  - item: cheddar cheese slice
+    qty: 2
+    unit: slice
+    grocery_section: dairy
+steps:
+  - Toast muffins and cook eggs.
+  - Assemble with cheese and warm until melted.
+notes:
+  - Add tomato or ham for variation.

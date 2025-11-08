@@ -1,0 +1,15 @@
+day,slot,card_ids,name,calories,protein_g
+Mon,Lunch,REC_EGGMUFFIN_MAIN_001,Egg and Cheese on English Muffin,370,22
+Mon,Dinner,REC_EGGROLL_MAIN_001,Shrimp & Pork Eggroll Bowl,480,40
+Tue,Lunch,REC_BEEF_FAJITA_RICE_MAIN_001,Beefy Fajita Taco Rice,675,47
+Tue,Dinner,REC_SAMBAL_CHIK_MAIN_001,Sambal Marinated Chicken,420,45
+Wed,Lunch,REC_RICE_SIDE_001,Steamed Rice,200,4
+Wed,Dinner,REC_SPINACH_SIDE_001,Steamed Spinach,45,4
+Thu,Lunch,REC_EGGMUFFIN_MAIN_001,Egg and Cheese on English Muffin,370,22
+Thu,Dinner,REC_CHIK_NOODLE_SOUP_MAIN_001,Chicken and Vegetable Noodle Soup,390,42
+Fri,Lunch,REC_GSOYCARROT_SIDE_001,Ginger Soy Carrots,90,2
+Fri,Dinner,REC_LENTIL_DAAL_SIDE_001,Split Lentil Daal,180,10
+Sat,Lunch,REC_BAKEDPOT_SIDE_001,Baked Potato with Sour Cream and Chives,220,5
+Sat,Dinner,REC_EGGMUFFIN_MAIN_001,Egg and Cheese on English Muffin,370,22
+Sun,Lunch,REC_EGGMUFFIN_MAIN_001,Egg and Cheese on English Muffin,370,22
+Sun,Dinner,REC_EGGROLL_MAIN_001,Shrimp & Pork Eggroll Bowl,480,40

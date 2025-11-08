@@ -1,0 +1,47 @@
+id: REC_GSOYCARROT_SIDE_001
+name: Ginger Soy Carrots
+role: side
+servings_default: 2
+portion_size_note: 1/2 lb carrots per serving
+macros_per_serving:
+  calories: 90
+  protein_g: 2
+  carbs_g: 12
+  fat_g: 4
+primary_carb:
+  - carrot
+protein_source: []
+veg:
+  - carrot
+allergens:
+  - soy
+meal_types:
+  - side
+meal_freq_cap_per_week: 1
+prep_time_min: 5
+cook_time_min: 10
+batch_friendly: true
+reheat_method:
+  - microwave
+ingredients:
+  - item: carrots, sliced
+    qty: 454
+    unit: g
+    grocery_section: produce
+  - item: soy sauce
+    qty: 15
+    unit: g
+    grocery_section: pantry
+  - item: ginger, grated
+    qty: 5
+    unit: g
+    grocery_section: produce
+  - item: sesame oil
+    qty: 5
+    unit: g
+    grocery_section: oils
+steps:
+  - Sauté carrots with ginger and soy sauce until tender.
+  - Finish with sesame oil.
+notes:
+  - Garnish with sesame seeds.

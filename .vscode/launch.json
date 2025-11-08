@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Meal Plan",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/mealplan_generator.py",
+      "args": [
+        "--cards_dir",
+        "./cards",
+        "--selection",
+        "./weekly_selection.yaml",
+        "--out_dir",
+        "./out",
+        "--seed",
+        "42"
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

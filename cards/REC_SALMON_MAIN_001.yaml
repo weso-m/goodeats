@@ -1,0 +1,43 @@
+id: REC_SALMON_MAIN_001
+name: Baked Salmon Fillet
+role: main
+servings_default: 2
+portion_size_note: 6 oz salmon per serving
+macros_per_serving:
+  calories: 380
+  protein_g: 38
+  carbs_g: 0
+  fat_g: 24
+primary_carb: []
+protein_source:
+  - salmon
+veg: []
+allergens:
+  - fish
+meal_types:
+  - lunch
+  - dinner
+meal_freq_cap_per_week: 3
+prep_time_min: 10
+cook_time_min: 15
+batch_friendly: true
+reheat_method:
+  - oven
+  - microwave
+ingredients:
+  - item: salmon fillet
+    qty: 12
+    unit: oz
+    grocery_section: seafood
+  - item: olive oil
+    qty: 1
+    unit: tbsp
+    grocery_section: oils
+  - item: lemon
+    qty: 1
+    unit: whole
+    grocery_section: produce
+steps:
+  - Season salmon; bake at 400°F until done.
+notes:
+  - Pair with potato/sweet potato and veg.

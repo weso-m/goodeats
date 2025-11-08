@@ -1,0 +1,50 @@
+id: REC_THAI_MB_MAIN_001
+name: Thai Chicken Meatballs
+role: main
+servings_default: 2
+portion_size_note: ~6 oz cooked meatballs per serving
+macros_per_serving:
+  calories: 380
+  protein_g: 40
+  carbs_g: 14
+  fat_g: 18
+primary_carb:
+  - veg
+protein_source:
+  - chicken
+veg:
+  - scallion
+  - herbs
+allergens:
+  - egg
+meal_types:
+  - lunch
+  - dinner
+meal_freq_cap_per_week: 3
+prep_time_min: 20
+cook_time_min: 20
+batch_friendly: true
+reheat_method:
+  - oven
+  - microwave
+ingredients:
+  - item: ground chicken
+    qty: 12
+    unit: oz
+    grocery_section: meat
+  - item: egg
+    qty: 1
+    unit: whole
+    grocery_section: dairy
+  - item: scallion
+    qty: 1
+    unit: oz
+    grocery_section: produce
+  - item: curry paste or seasoning
+    qty: 1
+    unit: tbsp
+    grocery_section: international
+steps:
+  - Mix, form meatballs, bake until cooked through.
+notes:
+  - Pair with veg + carb sides.

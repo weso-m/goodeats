@@ -1,0 +1,39 @@
+id: REC_PORK_MAIN_001
+name: Sous Vide Pork Tenderloin
+role: main
+servings_default: 2
+portion_size_note: 6 oz pork per serving
+macros_per_serving:
+  calories: 300
+  protein_g: 45
+  carbs_g: 2
+  fat_g: 12
+primary_carb: []
+protein_source:
+  - pork
+veg: []
+allergens: []
+meal_types:
+  - lunch
+  - dinner
+meal_freq_cap_per_week: 2
+prep_time_min: 15
+cook_time_min: 120
+batch_friendly: true
+reheat_method:
+  - skillet
+  - oven
+ingredients:
+  - item: pork tenderloin
+    qty: 12
+    unit: oz
+    grocery_section: meat
+  - item: olive oil
+    qty: 1
+    unit: tbsp
+    grocery_section: oils
+steps:
+  - Sous vide pork at 135-140°F for 1.5-2 hours.
+  - Pat dry and sear in hot skillet.
+notes:
+  - Pair with broccoli, ratatouille, and potato/sweet potato sides.

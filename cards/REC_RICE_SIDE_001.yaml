@@ -1,0 +1,36 @@
+id: REC_RICE_SIDE_001
+name: Steamed Rice
+role: side
+servings_default: 2
+portion_size_note: 1 cup cooked rice per serving
+macros_per_serving:
+  calories: 200
+  protein_g: 4
+  carbs_g: 44
+  fat_g: 1
+primary_carb:
+  - rice
+protein_source: []
+veg: []
+allergens: []
+meal_types:
+  - side
+meal_freq_cap_per_week: 1
+prep_time_min: 5
+cook_time_min: 20
+batch_friendly: true
+reheat_method:
+  - microwave
+ingredients:
+  - item: white rice, dry
+    qty: 185
+    unit: g
+    grocery_section: pantry
+  - item: water
+    qty: 370
+    unit: g
+    grocery_section: pantry
+steps:
+  - Cook rice until fluffy.
+notes:
+  - Substitute brown rice for more fiber.

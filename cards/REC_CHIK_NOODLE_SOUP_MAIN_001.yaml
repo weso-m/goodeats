@@ -1,0 +1,59 @@
+id: REC_CHIK_NOODLE_SOUP_MAIN_001
+name: Chicken and Vegetable Noodle Soup
+role: main
+servings_default: 2
+portion_size_note: 1 lb chicken + vegetables + noodles
+macros_per_serving:
+  calories: 390
+  protein_g: 42
+  carbs_g: 32
+  fat_g: 9
+primary_carb:
+  - noodles
+protein_source:
+  - chicken
+veg:
+  - carrot
+  - celery
+  - onion
+allergens: []
+meal_types:
+  - lunch
+  - dinner
+meal_freq_cap_per_week: 1
+prep_time_min: 15
+cook_time_min: 30
+batch_friendly: true
+reheat_method:
+  - stovetop
+ingredients:
+  - item: chicken breast
+    qty: 454
+    unit: g
+    grocery_section: meat
+  - item: egg noodles, dry
+    qty: 80
+    unit: g
+    grocery_section: pantry
+  - item: carrot, chopped
+    qty: 2
+    unit: whole
+    grocery_section: produce
+  - item: celery, chopped
+    qty: 2
+    unit: stalk
+    grocery_section: produce
+  - item: onion, diced
+    qty: 1
+    unit: whole
+    grocery_section: produce
+  - item: chicken broth
+    qty: 1
+    unit: quart
+    grocery_section: pantry
+steps:
+  - Sauté onion, carrot, and celery.
+  - Add chicken and broth; simmer until chicken is cooked.
+  - Add noodles and cook until tender.
+notes:
+  - Add lemon juice or parsley before serving.
