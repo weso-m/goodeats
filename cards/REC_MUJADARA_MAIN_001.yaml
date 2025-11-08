@@ -9,40 +9,43 @@ macros_per_serving:
   carbs_g: 75
   fat_g: 10
 primary_carb:
-  - rice
-  - lentils
+- rice
+- lentils
 protein_source:
-  - lentils
+- lentils
 veg:
-  - onion
+- onion
 allergens: []
 meal_types:
-  - lunch
-  - dinner
+- lunch
+- dinner
 meal_freq_cap_per_week: 1
 prep_time_min: 10
 cook_time_min: 35
 batch_friendly: true
 reheat_method:
-  - microwave
+- microwave
 ingredients:
-  - item: brown lentils, dry
-    qty: 180
-    unit: g
-    grocery_section: pantry
-  - item: white rice, dry
-    qty: 185
-    unit: g
-    grocery_section: pantry
-  - item: onion, sliced
-    qty: 2
-    unit: whole
-    grocery_section: produce
-  - item: olive oil
-    qty: 15
-    unit: g
-    grocery_section: oils
+- item: brown lentils, dry
+  qty: 180
+  unit: g
+  grocery_section: pantry
+- item: white rice, dry
+  qty: 185
+  unit: g
+  grocery_section: pantry
+- item: onion, sliced
+  qty: 2
+  unit: whole
+  grocery_section: produce
+- item: olive oil
+  qty: 15
+  unit: g
+  grocery_section: oils
 steps:
-  - Cook lentils and rice; mix and top with caramelized onions.
+- Cook lentils and rice; mix and top with caramelized onions.
 notes:
-  - Serve with yogurt or salad.
+- Serve with yogurt or salad.
+meal_slots:
+- dinner
+- lunch

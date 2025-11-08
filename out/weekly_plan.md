@@ -1,73 +1,69 @@
 # Weekly Plan (Lunch • Dinner)
 
-**Mon** — Egg and Cheese on English Muffin • Shrimp & Pork Eggroll Bowl
+**Mon** — Beefy Fajita Taco Rice + Ginger Soy Carrots • Egg and Cheese on English Muffin + Steamed Rice + Ginger Soy Carrots
 
-**Tue** — Beefy Fajita Taco Rice • Sambal Marinated Chicken
+**Tue** — Sambal Marinated Chicken + Steamed Spinach + Baked Potato with Sour Cream and Chives • Beef and Bean Chili + Split Lentil Daal + Ginger Soy Carrots
 
-**Wed** — Steamed Rice • Steamed Spinach
+**Wed** — Chicken and Vegetable Noodle Soup + Steamed Spinach + Baked Potato with Sour Cream and Chives • Egg and Cheese on English Muffin + Split Lentil Daal + Steamed Rice
 
-**Thu** — Egg and Cheese on English Muffin • Chicken and Vegetable Noodle Soup
+**Thu** — Beefy Fajita Taco Rice + Ginger Soy Carrots • Egg and Cheese on English Muffin + Ginger Soy Carrots + Steamed Spinach
 
-**Fri** — Ginger Soy Carrots • Split Lentil Daal
+**Fri** — Sambal Marinated Chicken + Baked Potato with Sour Cream and Chives + Ginger Soy Carrots • Beef and Bean Chili + Steamed Spinach + Baked Potato with Sour Cream and Chives
 
-**Sat** — Baked Potato with Sour Cream and Chives • Egg and Cheese on English Muffin
+**Sat** — Chicken and Vegetable Noodle Soup + Split Lentil Daal + Steamed Rice • Egg and Cheese on English Muffin + Ginger Soy Carrots + Steamed Spinach
 
-**Sun** — Egg and Cheese on English Muffin • Shrimp & Pork Eggroll Bowl
+**Sun** — Beefy Fajita Taco Rice + Ginger Soy Carrots • Egg and Cheese on English Muffin + Baked Potato with Sour Cream and Chives + Split Lentil Daal
 
 
 ## Daily Summary
 
-- Mon: ~850 kcal (P 62 g / C 59 g / F 38 g). Day is under target; choose higher-calorie cards or larger portions so main meals do the work. Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
-- Tue: ~1095 kcal (P 92 g / C 63 g / F 46 g). Day is under target; choose higher-calorie cards or larger portions so main meals do the work. Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
-- Wed: ~245 kcal (P 8 g / C 48 g / F 2 g). Day is under target; choose higher-calorie cards or larger portions so main meals do the work. Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
-- Thu: ~760 kcal (P 64 g / C 63 g / F 25 g). Day is under target; choose higher-calorie cards or larger portions so main meals do the work. Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
-- Fri: ~270 kcal (P 12 g / C 36 g / F 8 g). Day is under target; choose higher-calorie cards or larger portions so main meals do the work. Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
-- Sat: ~590 kcal (P 27 g / C 71 g / F 22 g). Day is under target; choose higher-calorie cards or larger portions so main meals do the work. Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
-- Sun: ~850 kcal (P 62 g / C 59 g / F 38 g). Day is under target; choose higher-calorie cards or larger portions so main meals do the work. Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
+- Mon: ~1425 kcal (P 77 g / C 154 g / F 49 g). Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
+- Tue: ~1475 kcal (P 110 g / C 123 g / F 55 g). 
+- Wed: ~1405 kcal (P 87 g / C 175 g / F 37 g). Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
+- Thu: ~1270 kcal (P 77 g / C 114 g / F 49 g). Slightly increase meal portions (e.g. +2 oz protein or +100 g potato/veg with olive oil). Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
+- Fri: ~1515 kcal (P 105 g / C 139 g / F 57 g). Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
+- Sat: ~1275 kcal (P 84 g / C 147 g / F 35 g). Slightly increase meal portions (e.g. +2 oz protein or +100 g potato/veg with olive oil). Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
+- Sun: ~1535 kcal (P 86 g / C 162 g / F 54 g). Protein a bit low; add ~2–4 oz lean protein to one meal or bump protein portions.
 
 ## Grocery List (by section)
 
 ### Bakery
-- english muffin — 4.0 whole
+- english muffin — 5.0 whole
 ### Dairy
-- cheddar cheese slice — 4.0 slice
-- egg — 4.0 whole
-- sour cream — 30 g
-### International
-- soy sauce / seasoning — 1.5 tbsp
+- cheddar cheese slice — 5.0 slice
+- egg — 5.0 whole
+- sour cream — 150 g
 ### Meat
-- chicken breast — 227 g
-- chicken thighs — 227 g
-- ground beef (90% lean) — 227 g
-- ground pork (lean) — 6.0 oz
+- chicken breast — 454 g
+- chicken thighs — 454 g
+- ground beef (90% lean) — 1135 g
 ### Oils
-- olive oil — 5 g
-- sesame oil — 2 g
+- olive oil — 10 g
+- sesame oil — 20 g
 ### Pantry
-- chicken broth — 0.5 quart
-- curry powder — 2 g
-- diced tomato — 0.5 can
-- egg noodles, dry — 40 g
-- fajita seasoning — 5 g
-- red lentils, dry — 90 g
-- salt — 1 g
-- sambal oelek — 10 g
-- soy sauce — 12 g
-- water — 185 g
-- white rice, dry — 185 g
+- chicken broth — 1.0 quart
+- chili powder — 8 g
+- curry powder — 10 g
+- diced tomato — 2.0 can
+- diced tomatoes — 1.0 can
+- egg noodles, dry — 80 g
+- fajita seasoning — 15 g
+- kidney beans, canned — 1.0 can
+- red lentils, dry — 360 g
+- salt — 5 g
+- sambal oelek — 20 g
+- soy sauce — 70 g
+- water — 555 g
+- white rice, dry — 555 g
 ### Produce
-- bell pepper, sliced — 0.5 whole
-- cabbage — 6.0 oz
-- carrot — 2.0 oz
-- carrot, chopped — 1.0 whole
-- carrots, sliced — 227 g
-- celery, chopped — 1.0 stalk
-- chives — 2 g
-- garlic, minced — 2 g
-- ginger, grated — 2 g
-- onion, diced — 0.5 whole
-- onion, sliced — 0.5 whole
-- russet potato — 1.0 whole
-- spinach — 0.5 bunch
-### Seafood
-- shrimp — 6.0 oz
+- bell pepper, sliced — 1.5 whole
+- carrot, chopped — 2.0 whole
+- carrots, sliced — 1816 g
+- celery, chopped — 2.0 stalk
+- chives — 12 g
+- garlic, minced — 10 g
+- ginger, grated — 20 g
+- onion, diced — 2.0 whole
+- onion, sliced — 1.5 whole
+- russet potato — 5.0 whole
+- spinach — 2.5 bunch

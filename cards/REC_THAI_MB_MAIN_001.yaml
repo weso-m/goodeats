@@ -9,42 +9,45 @@ macros_per_serving:
   carbs_g: 14
   fat_g: 18
 primary_carb:
-  - veg
+- veg
 protein_source:
-  - chicken
+- chicken
 veg:
-  - scallion
-  - herbs
+- scallion
+- herbs
 allergens:
-  - egg
+- egg
 meal_types:
-  - lunch
-  - dinner
+- lunch
+- dinner
 meal_freq_cap_per_week: 3
 prep_time_min: 20
 cook_time_min: 20
 batch_friendly: true
 reheat_method:
-  - oven
-  - microwave
+- oven
+- microwave
 ingredients:
-  - item: ground chicken
-    qty: 12
-    unit: oz
-    grocery_section: meat
-  - item: egg
-    qty: 1
-    unit: whole
-    grocery_section: dairy
-  - item: scallion
-    qty: 1
-    unit: oz
-    grocery_section: produce
-  - item: curry paste or seasoning
-    qty: 1
-    unit: tbsp
-    grocery_section: international
+- item: ground chicken
+  qty: 12
+  unit: oz
+  grocery_section: meat
+- item: egg
+  qty: 1
+  unit: whole
+  grocery_section: dairy
+- item: scallion
+  qty: 1
+  unit: oz
+  grocery_section: produce
+- item: curry paste or seasoning
+  qty: 1
+  unit: tbsp
+  grocery_section: international
 steps:
-  - Mix, form meatballs, bake until cooked through.
+- Mix, form meatballs, bake until cooked through.
 notes:
-  - Pair with veg + carb sides.
+- Pair with veg + carb sides.
+meal_slots:
+- dinner
+- lunch

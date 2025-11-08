@@ -310,6 +310,121 @@ def enforce_variety(pool: List[str], cards: Dict[str, RecipeCard]) -> None:
             for idx in red_meat_indices[1:]:
                 pool[idx] = replacement
 
+def build_week_plan_manual(selection: Dict[str, int],
+                           cards: Dict[str, RecipeCard],
+                           seed: int) -> List[MealSlot]:
+    """
+    Manual mode (selection.yaml):
+
+    - selection: {card_id: count} where counts mean "how many times I'd like this used"
+    - Uses meal_freq_cap_per_week as an upper bound per card.
+    - Ensures every slot has a MAIN (role: main/both).
+    - Uses sides (role: side/both) only as add-ons; never alone.
+    - If there are not enough mains to cover 14 slots within caps,
+      we repeat mains (with a warning) rather than output side-only meals.
+    """
+    rnd = random.Random(seed)
+
+    main_pool: List[str] = []
+    side_pool: List[str] = []
+
+    for cid, requested in selection.items():
+        if cid not in cards:
+            print(f"[warn] Selection references unknown card: {cid}; skipping.")
+            continue
+
+        card = cards[cid]
+        cap = card.meal_freq_cap_per_week
+        use = min(int(requested), int(cap)) if cap is not None else int(requested)
+        if use <= 0:
+            continue
+
+        if card.role in ("main", "both"):
+            main_pool.extend([cid] * use)
+        if card.role in ("side", "both"):
+            side_pool.extend([cid] * use)
+
+    if not main_pool:
+        raise ValueError(
+            "Manual mode: selection must include at least one main (role: main/both). "
+            "Currently only sides are selected."
+        )
+
+    rnd.shuffle(main_pool)
+    rnd.shuffle(side_pool)
+
+    total_slots = 14  # 7 days * 2 meals
+
+    # If we don't have enough mains within caps, repeat them (but warn).
+    if len(main_pool) < total_slots:
+        print(
+            f"[warn] Manual selection only provides {len(main_pool)} main 'uses' "
+            f"for {total_slots} slots. Reusing mains to avoid side-only meals."
+        )
+
+    slots: List[MealSlot] = []
+    day = 0
+    side_idx = 0
+    side_len = len(side_pool)
+
+    for i in range(total_slots):
+        slot_name = "Lunch" if i % 2 == 0 else "Dinner"
+
+        # Always choose a main
+        main_cid = main_pool[i % len(main_pool)]
+        main = cards[main_cid]
+
+        comp_ids = [main_cid]
+        cal = main.macros_per_serving.calories
+        p = main.macros_per_serving.protein_g
+        carbs = main.macros_per_serving.carbs_g
+        fat = main.macros_per_serving.fat_g
+
+        # Try to attach up to 2 sides, if we have any.
+        # We walk through side_pool once; leftover sides are ignored (better than side-only meals).
+        if side_len:
+            attempts = 0
+            while attempts < side_len and len(comp_ids) < 3:
+                sid = side_pool[side_idx % side_len]
+                side_idx += 1
+                attempts += 1
+
+                side = cards[sid]
+                new_cal = cal + side.macros_per_serving.calories
+
+                # Use similar band as auto-mode: prefer 450–800 kcal when possible
+                if cal < 450:
+                    if new_cal <= 800:
+                        comp_ids.append(sid)
+                        cal = new_cal
+                        p += side.macros_per_serving.protein_g
+                        carbs += side.macros_per_serving.carbs_g
+                        fat += side.macros_per_serving.fat_g
+                else:
+                    if new_cal <= 800:
+                        comp_ids.append(sid)
+                        cal = new_cal
+                        p += side.macros_per_serving.protein_g
+                        carbs += side.macros_per_serving.carbs_g
+                        fat += side.macros_per_serving.fat_g
+
+        slots.append(
+            MealSlot(
+                day=day,
+                slot=slot_name,
+                card_ids=comp_ids,
+                calories=cal,
+                protein_g=p,
+                carbs_g=carbs,
+                fat_g=fat,
+            )
+        )
+
+        if slot_name == "Dinner":
+            day += 1
+
+    return slots
+
 
 def build_week_plan(pool: List[str], cards: Dict[str, RecipeCard], seed: int = 42) -> List[MealSlot]:
     """
@@ -797,10 +912,8 @@ def main() -> int:
     selection = load_selection(args.selection, args.select)
 
     if selection:
-        # Manual mode
-        pool = expand_pool(selection, cards)
-        enforce_variety(pool, cards)
-        slots = build_week_plan(pool, cards, seed=seed)
+        # Manual mode: ensure every slot has a main, sides as add-ons only
+        slots = build_week_plan_manual(selection, cards, seed=seed)
     else:
         # Auto mode
         print(

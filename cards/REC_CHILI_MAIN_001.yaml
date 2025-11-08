@@ -9,46 +9,49 @@ macros_per_serving:
   carbs_g: 35
   fat_g: 18
 primary_carb:
-  - beans
+- beans
 protein_source:
-  - beef
+- beef
 veg:
-  - tomato
-  - onion
-  - bell pepper
+- tomato
+- onion
+- bell pepper
 allergens: []
 meal_types:
-  - lunch
-  - dinner
+- lunch
+- dinner
 meal_freq_cap_per_week: 1
 prep_time_min: 15
 cook_time_min: 45
 batch_friendly: true
 reheat_method:
-  - microwave
+- microwave
 ingredients:
-  - item: ground beef (90% lean)
-    qty: 454
-    unit: g
-    grocery_section: meat
-  - item: kidney beans, canned
-    qty: 1
-    unit: can
-    grocery_section: pantry
-  - item: diced tomatoes
-    qty: 1
-    unit: can
-    grocery_section: pantry
-  - item: onion, diced
-    qty: 1
-    unit: whole
-    grocery_section: produce
-  - item: chili powder
-    qty: 8
-    unit: g
-    grocery_section: pantry
+- item: ground beef (90% lean)
+  qty: 454
+  unit: g
+  grocery_section: meat
+- item: kidney beans, canned
+  qty: 1
+  unit: can
+  grocery_section: pantry
+- item: diced tomatoes
+  qty: 1
+  unit: can
+  grocery_section: pantry
+- item: onion, diced
+  qty: 1
+  unit: whole
+  grocery_section: produce
+- item: chili powder
+  qty: 8
+  unit: g
+  grocery_section: pantry
 steps:
-  - Brown beef with onion.
-  - Add tomatoes, beans, and chili powder; simmer 30 minutes.
+- Brown beef with onion.
+- Add tomatoes, beans, and chili powder; simmer 30 minutes.
 notes:
-  - Top with Greek yogurt or cilantro.
+- Top with Greek yogurt or cilantro.
+meal_slots:
+- dinner
+- lunch

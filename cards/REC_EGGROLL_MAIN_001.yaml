@@ -9,47 +9,50 @@ macros_per_serving:
   carbs_g: 28
   fat_g: 22
 primary_carb:
-  - veg
+- veg
 protein_source:
-  - shrimp
-  - pork
+- shrimp
+- pork
 veg:
-  - cabbage
-  - carrot
+- cabbage
+- carrot
 allergens:
-  - shellfish
+- shellfish
 meal_types:
-  - lunch
-  - dinner
+- lunch
+- dinner
 meal_freq_cap_per_week: 2
 prep_time_min: 25
 cook_time_min: 25
 batch_friendly: true
 reheat_method:
-  - skillet
-  - microwave
+- skillet
+- microwave
 ingredients:
-  - item: shrimp
-    qty: 6
-    unit: oz
-    grocery_section: seafood
-  - item: ground pork (lean)
-    qty: 6
-    unit: oz
-    grocery_section: meat
-  - item: cabbage
-    qty: 6
-    unit: oz
-    grocery_section: produce
-  - item: carrot
-    qty: 2
-    unit: oz
-    grocery_section: produce
-  - item: soy sauce / seasoning
-    qty: 1.5
-    unit: tbsp
-    grocery_section: international
+- item: shrimp
+  qty: 6
+  unit: oz
+  grocery_section: seafood
+- item: ground pork (lean)
+  qty: 6
+  unit: oz
+  grocery_section: meat
+- item: cabbage
+  qty: 6
+  unit: oz
+  grocery_section: produce
+- item: carrot
+  qty: 2
+  unit: oz
+  grocery_section: produce
+- item: soy sauce / seasoning
+  qty: 1.5
+  unit: tbsp
+  grocery_section: international
 steps:
-  - Cook pork and shrimp; add shredded veg and seasoning.
+- Cook pork and shrimp; add shredded veg and seasoning.
 notes:
-  - Serve as a bowl; macros assume no wrapper.
+- Serve as a bowl; macros assume no wrapper.
+meal_slots:
+- dinner
+- lunch

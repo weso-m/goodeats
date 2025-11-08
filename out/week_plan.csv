@@ -1,15 +1,15 @@
 day,slot,card_ids,name,calories,protein_g
-Mon,Lunch,REC_EGGMUFFIN_MAIN_001,Egg and Cheese on English Muffin,370,22
-Mon,Dinner,REC_EGGROLL_MAIN_001,Shrimp & Pork Eggroll Bowl,480,40
-Tue,Lunch,REC_BEEF_FAJITA_RICE_MAIN_001,Beefy Fajita Taco Rice,675,47
-Tue,Dinner,REC_SAMBAL_CHIK_MAIN_001,Sambal Marinated Chicken,420,45
-Wed,Lunch,REC_RICE_SIDE_001,Steamed Rice,200,4
-Wed,Dinner,REC_SPINACH_SIDE_001,Steamed Spinach,45,4
-Thu,Lunch,REC_EGGMUFFIN_MAIN_001,Egg and Cheese on English Muffin,370,22
-Thu,Dinner,REC_CHIK_NOODLE_SOUP_MAIN_001,Chicken and Vegetable Noodle Soup,390,42
-Fri,Lunch,REC_GSOYCARROT_SIDE_001,Ginger Soy Carrots,90,2
-Fri,Dinner,REC_LENTIL_DAAL_SIDE_001,Split Lentil Daal,180,10
-Sat,Lunch,REC_BAKEDPOT_SIDE_001,Baked Potato with Sour Cream and Chives,220,5
-Sat,Dinner,REC_EGGMUFFIN_MAIN_001,Egg and Cheese on English Muffin,370,22
-Sun,Lunch,REC_EGGMUFFIN_MAIN_001,Egg and Cheese on English Muffin,370,22
-Sun,Dinner,REC_EGGROLL_MAIN_001,Shrimp & Pork Eggroll Bowl,480,40
+Mon,Lunch,REC_BEEF_FAJITA_RICE_MAIN_001 | REC_GSOYCARROT_SIDE_001,Beefy Fajita Taco Rice + Ginger Soy Carrots,765,49
+Mon,Dinner,REC_EGGMUFFIN_MAIN_001 | REC_RICE_SIDE_001 | REC_GSOYCARROT_SIDE_001,Egg and Cheese on English Muffin + Steamed Rice + Ginger Soy Carrots,660,28
+Tue,Lunch,REC_SAMBAL_CHIK_MAIN_001 | REC_SPINACH_SIDE_001 | REC_BAKEDPOT_SIDE_001,Sambal Marinated Chicken + Steamed Spinach + Baked Potato with Sour Cream and Chives,685,54
+Tue,Dinner,REC_CHILI_MAIN_001 | REC_LENTIL_DAAL_SIDE_001 | REC_GSOYCARROT_SIDE_001,Beef and Bean Chili + Split Lentil Daal + Ginger Soy Carrots,790,56
+Wed,Lunch,REC_CHIK_NOODLE_SOUP_MAIN_001 | REC_SPINACH_SIDE_001 | REC_BAKEDPOT_SIDE_001,Chicken and Vegetable Noodle Soup + Steamed Spinach + Baked Potato with Sour Cream and Chives,655,51
+Wed,Dinner,REC_EGGMUFFIN_MAIN_001 | REC_LENTIL_DAAL_SIDE_001 | REC_RICE_SIDE_001,Egg and Cheese on English Muffin + Split Lentil Daal + Steamed Rice,750,36
+Thu,Lunch,REC_BEEF_FAJITA_RICE_MAIN_001 | REC_GSOYCARROT_SIDE_001,Beefy Fajita Taco Rice + Ginger Soy Carrots,765,49
+Thu,Dinner,REC_EGGMUFFIN_MAIN_001 | REC_GSOYCARROT_SIDE_001 | REC_SPINACH_SIDE_001,Egg and Cheese on English Muffin + Ginger Soy Carrots + Steamed Spinach,505,28
+Fri,Lunch,REC_SAMBAL_CHIK_MAIN_001 | REC_BAKEDPOT_SIDE_001 | REC_GSOYCARROT_SIDE_001,Sambal Marinated Chicken + Baked Potato with Sour Cream and Chives + Ginger Soy Carrots,730,52
+Fri,Dinner,REC_CHILI_MAIN_001 | REC_SPINACH_SIDE_001 | REC_BAKEDPOT_SIDE_001,Beef and Bean Chili + Steamed Spinach + Baked Potato with Sour Cream and Chives,785,53
+Sat,Lunch,REC_CHIK_NOODLE_SOUP_MAIN_001 | REC_LENTIL_DAAL_SIDE_001 | REC_RICE_SIDE_001,Chicken and Vegetable Noodle Soup + Split Lentil Daal + Steamed Rice,770,56
+Sat,Dinner,REC_EGGMUFFIN_MAIN_001 | REC_GSOYCARROT_SIDE_001 | REC_SPINACH_SIDE_001,Egg and Cheese on English Muffin + Ginger Soy Carrots + Steamed Spinach,505,28
+Sun,Lunch,REC_BEEF_FAJITA_RICE_MAIN_001 | REC_GSOYCARROT_SIDE_001,Beefy Fajita Taco Rice + Ginger Soy Carrots,765,49
+Sun,Dinner,REC_EGGMUFFIN_MAIN_001 | REC_BAKEDPOT_SIDE_001 | REC_LENTIL_DAAL_SIDE_001,Egg and Cheese on English Muffin + Baked Potato with Sour Cream and Chives + Split Lentil Daal,770,37

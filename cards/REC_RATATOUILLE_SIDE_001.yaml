@@ -9,44 +9,48 @@ macros_per_serving:
   carbs_g: 20
   fat_g: 8
 primary_carb:
-  - veg
+- veg
 protein_source: []
 veg:
-  - eggplant
-  - zucchini
-  - tomato
+- eggplant
+- zucchini
+- tomato
 allergens: []
 meal_types:
-  - side
+- side
 meal_freq_cap_per_week: 4
 prep_time_min: 15
 cook_time_min: 35
 batch_friendly: true
 reheat_method:
-  - microwave
-  - skillet
+- microwave
+- skillet
 ingredients:
-  - item: eggplant
-    qty: 4
-    unit: oz
-    grocery_section: produce
-  - item: zucchini
-    qty: 4
-    unit: oz
-    grocery_section: produce
-  - item: bell pepper
-    qty: 3
-    unit: oz
-    grocery_section: produce
-  - item: tomato
-    qty: 3
-    unit: oz
-    grocery_section: produce
-  - item: olive oil
-    qty: 1.5
-    unit: tbsp
-    grocery_section: oils
+- item: eggplant
+  qty: 4
+  unit: oz
+  grocery_section: produce
+- item: zucchini
+  qty: 4
+  unit: oz
+  grocery_section: produce
+- item: bell pepper
+  qty: 3
+  unit: oz
+  grocery_section: produce
+- item: tomato
+  qty: 3
+  unit: oz
+  grocery_section: produce
+- item: olive oil
+  qty: 1.5
+  unit: tbsp
+  grocery_section: oils
 steps:
-  - Saute veg with oil; simmer until tender.
+- Saute veg with oil; simmer until tender.
 notes:
-  - Excellent with pork, chicken, or fish mains.
+- Excellent with pork, chicken, or fish mains.
+meal_slots:
+- dinner
+- lunch
+- snack

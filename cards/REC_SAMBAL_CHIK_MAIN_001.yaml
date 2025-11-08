@@ -10,37 +10,40 @@ macros_per_serving:
   fat_g: 22
 primary_carb: []
 protein_source:
-  - chicken
+- chicken
 veg: []
 allergens: []
 meal_types:
-  - lunch
-  - dinner
+- lunch
+- dinner
 meal_freq_cap_per_week: 1
 prep_time_min: 10
 cook_time_min: 25
 batch_friendly: true
 reheat_method:
-  - microwave
+- microwave
 ingredients:
-  - item: chicken thighs
-    qty: 454
-    unit: g
-    grocery_section: meat
-  - item: sambal oelek
-    qty: 20
-    unit: g
-    grocery_section: pantry
-  - item: soy sauce
-    qty: 10
-    unit: g
-    grocery_section: pantry
-  - item: olive oil
-    qty: 10
-    unit: g
-    grocery_section: oils
+- item: chicken thighs
+  qty: 454
+  unit: g
+  grocery_section: meat
+- item: sambal oelek
+  qty: 20
+  unit: g
+  grocery_section: pantry
+- item: soy sauce
+  qty: 10
+  unit: g
+  grocery_section: pantry
+- item: olive oil
+  qty: 10
+  unit: g
+  grocery_section: oils
 steps:
-  - Marinate chicken in sambal and soy sauce.
-  - Bake or grill until cooked through.
+- Marinate chicken in sambal and soy sauce.
+- Bake or grill until cooked through.
 notes:
-  - Great with rice or roasted vegetables.
+- Great with rice or roasted vegetables.
+meal_slots:
+- dinner
+- lunch

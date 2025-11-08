@@ -4,53 +4,57 @@ role: main
 servings_default: 2
 portion_size_note: 6 oz shrimp per serving
 macros_per_serving:
-  calories: 250    # adjust to your real numbers
+  calories: 250
   protein_g: 35
   carbs_g: 4
   fat_g: 10
 primary_carb: []
 protein_source:
-  - shrimp
+- shrimp
 veg: []
 allergens:
-  - shellfish
+- shellfish
 meal_types:
-  - lunch
-  - dinner
+- lunch
+- dinner
 meal_freq_cap_per_week: 3
 prep_time_min: 10
 cook_time_min: 8
 batch_friendly: true
 reheat_method:
-  - stovetop
-  - microwave
+- stovetop
+- microwave
 ingredients:
-  - item: raw shrimp, peeled & deveined
-    qty: 340
-    unit: g
-    grocery_section: seafood
-  - item: olive oil
-    qty: 15
-    unit: g
-    grocery_section: oils
-  - item: garlic
-    qty: 6
-    unit: g
-    grocery_section: produce
-  - item: lemon juice
-    qty: 15
-    unit: g
-    grocery_section: produce
-  - item: salt
-    qty: 3
-    unit: g
-    grocery_section: pantry
-  - item: black pepper
-    qty: 1
-    unit: g
-    grocery_section: pantry
+- item: raw shrimp, peeled & deveined
+  qty: 340
+  unit: g
+  grocery_section: seafood
+- item: olive oil
+  qty: 15
+  unit: g
+  grocery_section: oils
+- item: garlic
+  qty: 6
+  unit: g
+  grocery_section: produce
+- item: lemon juice
+  qty: 15
+  unit: g
+  grocery_section: produce
+- item: salt
+  qty: 3
+  unit: g
+  grocery_section: pantry
+- item: black pepper
+  qty: 1
+  unit: g
+  grocery_section: pantry
 steps:
-  - Pat shrimp dry and season with salt, pepper, garlic, and lemon.
-  - Sear in hot pan with olive oil until opaque and lightly browned.
+- Pat shrimp dry and season with salt, pepper, garlic, and lemon.
+- Sear in hot pan with olive oil until opaque and lightly browned.
 notes:
-  - Pairs with asparagus, potatoes, rice, or other veg sides.
+- Pairs with asparagus, potatoes, rice, or other veg sides.
+meal_slots:
+- dinner
+- lunch
+- snack

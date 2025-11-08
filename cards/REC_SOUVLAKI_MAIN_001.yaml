@@ -9,44 +9,47 @@ macros_per_serving:
   carbs_g: 16
   fat_g: 22
 primary_carb:
-  - veg
+- veg
 protein_source:
-  - chicken
+- chicken
 veg:
-  - cucumber
-  - tomato
-  - onion
+- cucumber
+- tomato
+- onion
 allergens:
-  - dairy
+- dairy
 meal_types:
-  - lunch
-  - dinner
+- lunch
+- dinner
 meal_freq_cap_per_week: 3
 prep_time_min: 20
 cook_time_min: 15
 batch_friendly: true
 reheat_method:
-  - skillet
-  - microwave
+- skillet
+- microwave
 ingredients:
-  - item: chicken breast
-    qty: 12
-    unit: oz
-    grocery_section: meat
-  - item: greek yogurt (2%)
-    qty: 4
-    unit: oz
-    grocery_section: dairy
-  - item: cucumber
-    qty: 3
-    unit: oz
-    grocery_section: produce
-  - item: olive oil
-    qty: 1.5
-    unit: tbsp
-    grocery_section: oils
+- item: chicken breast
+  qty: 12
+  unit: oz
+  grocery_section: meat
+- item: greek yogurt (2%)
+  qty: 4
+  unit: oz
+  grocery_section: dairy
+- item: cucumber
+  qty: 3
+  unit: oz
+  grocery_section: produce
+- item: olive oil
+  qty: 1.5
+  unit: tbsp
+  grocery_section: oils
 steps:
-  - Marinate and grill chicken.
-  - Make tzatziki with yogurt and cucumber; serve with veg.
+- Marinate and grill chicken.
+- Make tzatziki with yogurt and cucumber; serve with veg.
 notes:
-  - Add pita or potato side if you need more carbs.
+- Add pita or potato side if you need more carbs.
+meal_slots:
+- dinner
+- lunch

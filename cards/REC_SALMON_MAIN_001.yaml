@@ -10,34 +10,37 @@ macros_per_serving:
   fat_g: 24
 primary_carb: []
 protein_source:
-  - salmon
+- salmon
 veg: []
 allergens:
-  - fish
+- fish
 meal_types:
-  - lunch
-  - dinner
+- lunch
+- dinner
 meal_freq_cap_per_week: 3
 prep_time_min: 10
 cook_time_min: 15
 batch_friendly: true
 reheat_method:
-  - oven
-  - microwave
+- oven
+- microwave
 ingredients:
-  - item: salmon fillet
-    qty: 12
-    unit: oz
-    grocery_section: seafood
-  - item: olive oil
-    qty: 1
-    unit: tbsp
-    grocery_section: oils
-  - item: lemon
-    qty: 1
-    unit: whole
-    grocery_section: produce
+- item: salmon fillet
+  qty: 12
+  unit: oz
+  grocery_section: seafood
+- item: olive oil
+  qty: 1
+  unit: tbsp
+  grocery_section: oils
+- item: lemon
+  qty: 1
+  unit: whole
+  grocery_section: produce
 steps:
-  - Season salmon; bake at 400°F until done.
+- Season salmon; bake at 400°F until done.
 notes:
-  - Pair with potato/sweet potato and veg.
+- Pair with potato/sweet potato and veg.
+meal_slots:
+- dinner
+- lunch

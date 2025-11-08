@@ -9,32 +9,36 @@ macros_per_serving:
   carbs_g: 44
   fat_g: 3
 primary_carb:
-  - rice
+- rice
 protein_source: []
 veg: []
 allergens: []
 meal_types:
-  - side
+- side
 meal_freq_cap_per_week: 4
 prep_time_min: 5
 cook_time_min: 15
 batch_friendly: true
 reheat_method:
-  - microwave
+- microwave
 ingredients:
-  - item: dry jasmine rice
-    qty: 100
-    unit: g
-    grocery_section: grains
-  - item: lime juice
-    qty: 1
-    unit: tbsp
-    grocery_section: produce
-  - item: olive oil
-    qty: 0.5
-    unit: tbsp
-    grocery_section: oils
+- item: dry jasmine rice
+  qty: 100
+  unit: g
+  grocery_section: grains
+- item: lime juice
+  qty: 1
+  unit: tbsp
+  grocery_section: produce
+- item: olive oil
+  qty: 0.5
+  unit: tbsp
+  grocery_section: oils
 steps:
-  - Cook rice; toss with lime juice and oil.
+- Cook rice; toss with lime juice and oil.
 notes:
-  - Pair with chipotle chicken, souvlaki, or shrimp.
+- Pair with chipotle chicken, souvlaki, or shrimp.
+meal_slots:
+- dinner
+- lunch
+- snack

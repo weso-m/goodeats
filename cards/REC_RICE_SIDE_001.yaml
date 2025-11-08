@@ -9,28 +9,32 @@ macros_per_serving:
   carbs_g: 44
   fat_g: 1
 primary_carb:
-  - rice
+- rice
 protein_source: []
 veg: []
 allergens: []
 meal_types:
-  - side
+- side
 meal_freq_cap_per_week: 1
 prep_time_min: 5
 cook_time_min: 20
 batch_friendly: true
 reheat_method:
-  - microwave
+- microwave
 ingredients:
-  - item: white rice, dry
-    qty: 185
-    unit: g
-    grocery_section: pantry
-  - item: water
-    qty: 370
-    unit: g
-    grocery_section: pantry
+- item: white rice, dry
+  qty: 185
+  unit: g
+  grocery_section: pantry
+- item: water
+  qty: 370
+  unit: g
+  grocery_section: pantry
 steps:
-  - Cook rice until fluffy.
+- Cook rice until fluffy.
 notes:
-  - Substitute brown rice for more fiber.
+- Substitute brown rice for more fiber.
+meal_slots:
+- dinner
+- lunch
+- snack

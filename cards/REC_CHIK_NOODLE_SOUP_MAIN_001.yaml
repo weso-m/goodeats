@@ -9,51 +9,54 @@ macros_per_serving:
   carbs_g: 32
   fat_g: 9
 primary_carb:
-  - noodles
+- noodles
 protein_source:
-  - chicken
+- chicken
 veg:
-  - carrot
-  - celery
-  - onion
+- carrot
+- celery
+- onion
 allergens: []
 meal_types:
-  - lunch
-  - dinner
+- lunch
+- dinner
 meal_freq_cap_per_week: 1
 prep_time_min: 15
 cook_time_min: 30
 batch_friendly: true
 reheat_method:
-  - stovetop
+- stovetop
 ingredients:
-  - item: chicken breast
-    qty: 454
-    unit: g
-    grocery_section: meat
-  - item: egg noodles, dry
-    qty: 80
-    unit: g
-    grocery_section: pantry
-  - item: carrot, chopped
-    qty: 2
-    unit: whole
-    grocery_section: produce
-  - item: celery, chopped
-    qty: 2
-    unit: stalk
-    grocery_section: produce
-  - item: onion, diced
-    qty: 1
-    unit: whole
-    grocery_section: produce
-  - item: chicken broth
-    qty: 1
-    unit: quart
-    grocery_section: pantry
+- item: chicken breast
+  qty: 454
+  unit: g
+  grocery_section: meat
+- item: egg noodles, dry
+  qty: 80
+  unit: g
+  grocery_section: pantry
+- item: carrot, chopped
+  qty: 2
+  unit: whole
+  grocery_section: produce
+- item: celery, chopped
+  qty: 2
+  unit: stalk
+  grocery_section: produce
+- item: onion, diced
+  qty: 1
+  unit: whole
+  grocery_section: produce
+- item: chicken broth
+  qty: 1
+  unit: quart
+  grocery_section: pantry
 steps:
-  - Sauté onion, carrot, and celery.
-  - Add chicken and broth; simmer until chicken is cooked.
-  - Add noodles and cook until tender.
+- Sauté onion, carrot, and celery.
+- Add chicken and broth; simmer until chicken is cooked.
+- Add noodles and cook until tender.
 notes:
-  - Add lemon juice or parsley before serving.
+- Add lemon juice or parsley before serving.
+meal_slots:
+- dinner
+- lunch

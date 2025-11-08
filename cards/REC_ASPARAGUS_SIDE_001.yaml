@@ -4,43 +4,47 @@ role: side
 servings_default: 2
 portion_size_note: ~120 g asparagus per serving
 macros_per_serving:
-  calories: 60      # adjust to your real numbers
+  calories: 60
   protein_g: 3
   carbs_g: 5
   fat_g: 3
 primary_carb: []
 protein_source: []
 veg:
-  - asparagus
+- asparagus
 allergens: []
 meal_types:
-  - side
+- side
 meal_freq_cap_per_week: 5
 prep_time_min: 5
 cook_time_min: 12
 batch_friendly: true
 reheat_method:
-  - oven
-  - microwave
+- oven
+- microwave
 ingredients:
-  - item: asparagus
-    qty: 240
-    unit: g
-    grocery_section: produce
-  - item: olive oil
-    qty: 10
-    unit: g
-    grocery_section: oils
-  - item: salt
-    qty: 2
-    unit: g
-    grocery_section: pantry
-  - item: black pepper
-    qty: 1
-    unit: g
-    grocery_section: pantry
+- item: asparagus
+  qty: 240
+  unit: g
+  grocery_section: produce
+- item: olive oil
+  qty: 10
+  unit: g
+  grocery_section: oils
+- item: salt
+  qty: 2
+  unit: g
+  grocery_section: pantry
+- item: black pepper
+  qty: 1
+  unit: g
+  grocery_section: pantry
 steps:
-  - Toss asparagus with oil, salt, and pepper.
-  - Roast at 400°F until tender and slightly browned.
+- Toss asparagus with oil, salt, and pepper.
+- Roast at 400°F until tender and slightly browned.
 notes:
-  - Works with any high-protein main like shrimp, chicken, or pork.
+- Works with any high-protein main like shrimp, chicken, or pork.
+meal_slots:
+- dinner
+- lunch
+- snack

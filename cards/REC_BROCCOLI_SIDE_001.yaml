@@ -11,27 +11,31 @@ macros_per_serving:
 primary_carb: []
 protein_source: []
 veg:
-  - broccoli
+- broccoli
 allergens: []
 meal_types:
-  - side
+- side
 meal_freq_cap_per_week: 5
 prep_time_min: 5
 cook_time_min: 20
 batch_friendly: true
 reheat_method:
-  - oven
-  - microwave
+- oven
+- microwave
 ingredients:
-  - item: broccoli florets
-    qty: 500
-    unit: g
-    grocery_section: produce
-  - item: olive oil
-    qty: 1
-    unit: tbsp
-    grocery_section: oils
+- item: broccoli florets
+  qty: 500
+  unit: g
+  grocery_section: produce
+- item: olive oil
+  qty: 1
+  unit: tbsp
+  grocery_section: oils
 steps:
-  - Toss broccoli with oil, salt; roast at 425°F until browned.
+- Toss broccoli with oil, salt; roast at 425°F until browned.
 notes:
-  - Great with any protein.
+- Great with any protein.
+meal_slots:
+- dinner
+- lunch
+- snack

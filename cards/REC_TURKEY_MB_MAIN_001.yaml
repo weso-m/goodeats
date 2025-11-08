@@ -9,41 +9,44 @@ macros_per_serving:
   carbs_g: 8
   fat_g: 16
 primary_carb:
-  - veg
+- veg
 protein_source:
-  - turkey
+- turkey
 veg:
-  - onion
+- onion
 allergens:
-  - egg
+- egg
 meal_types:
-  - lunch
-  - dinner
+- lunch
+- dinner
 meal_freq_cap_per_week: 3
 prep_time_min: 20
 cook_time_min: 20
 batch_friendly: true
 reheat_method:
-  - oven
-  - microwave
+- oven
+- microwave
 ingredients:
-  - item: ground turkey (93%)
-    qty: 12
-    unit: oz
-    grocery_section: meat
-  - item: egg
-    qty: 1
-    unit: whole
-    grocery_section: dairy
-  - item: onion
-    qty: 2
-    unit: oz
-    grocery_section: produce
-  - item: breadcrumbs (light)
-    qty: 0.5
-    unit: oz
-    grocery_section: bakery
+- item: ground turkey (93%)
+  qty: 12
+  unit: oz
+  grocery_section: meat
+- item: egg
+  qty: 1
+  unit: whole
+  grocery_section: dairy
+- item: onion
+  qty: 2
+  unit: oz
+  grocery_section: produce
+- item: breadcrumbs (light)
+  qty: 0.5
+  unit: oz
+  grocery_section: bakery
 steps:
-  - Mix, form, and bake meatballs.
+- Mix, form, and bake meatballs.
 notes:
-  - Serve with veg + carb sides.
+- Serve with veg + carb sides.
+meal_slots:
+- dinner
+- lunch

@@ -10,30 +10,33 @@ macros_per_serving:
   fat_g: 12
 primary_carb: []
 protein_source:
-  - pork
+- pork
 veg: []
 allergens: []
 meal_types:
-  - lunch
-  - dinner
+- lunch
+- dinner
 meal_freq_cap_per_week: 2
 prep_time_min: 15
 cook_time_min: 120
 batch_friendly: true
 reheat_method:
-  - skillet
-  - oven
+- skillet
+- oven
 ingredients:
-  - item: pork tenderloin
-    qty: 12
-    unit: oz
-    grocery_section: meat
-  - item: olive oil
-    qty: 1
-    unit: tbsp
-    grocery_section: oils
+- item: pork tenderloin
+  qty: 12
+  unit: oz
+  grocery_section: meat
+- item: olive oil
+  qty: 1
+  unit: tbsp
+  grocery_section: oils
 steps:
-  - Sous vide pork at 135-140°F for 1.5-2 hours.
-  - Pat dry and sear in hot skillet.
+- Sous vide pork at 135-140°F for 1.5-2 hours.
+- Pat dry and sear in hot skillet.
 notes:
-  - Pair with broccoli, ratatouille, and potato/sweet potato sides.
+- Pair with broccoli, ratatouille, and potato/sweet potato sides.
+meal_slots:
+- dinner
+- lunch

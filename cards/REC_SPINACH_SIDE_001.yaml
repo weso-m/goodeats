@@ -11,27 +11,31 @@ macros_per_serving:
 primary_carb: []
 protein_source: []
 veg:
-  - spinach
+- spinach
 allergens: []
 meal_types:
-  - side
+- side
 meal_freq_cap_per_week: 1
 prep_time_min: 5
 cook_time_min: 5
 batch_friendly: true
 reheat_method:
-  - microwave
+- microwave
 ingredients:
-  - item: spinach
-    qty: 1
-    unit: bunch
-    grocery_section: produce
-  - item: salt
-    qty: 2
-    unit: g
-    grocery_section: pantry
+- item: spinach
+  qty: 1
+  unit: bunch
+  grocery_section: produce
+- item: salt
+  qty: 2
+  unit: g
+  grocery_section: pantry
 steps:
-  - Steam spinach until wilted.
-  - Season lightly with salt.
+- Steam spinach until wilted.
+- Season lightly with salt.
 notes:
-  - Add lemon juice or olive oil drizzle.
+- Add lemon juice or olive oil drizzle.
+meal_slots:
+- dinner
+- lunch
+- snack

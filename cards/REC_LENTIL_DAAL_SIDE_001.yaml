@@ -9,38 +9,42 @@ macros_per_serving:
   carbs_g: 24
   fat_g: 4
 primary_carb:
-  - lentils
+- lentils
 protein_source:
-  - lentils
+- lentils
 veg:
-  - tomato
+- tomato
 allergens: []
 meal_types:
-  - side
+- side
 meal_freq_cap_per_week: 1
 prep_time_min: 10
 cook_time_min: 25
 batch_friendly: true
 reheat_method:
-  - microwave
+- microwave
 ingredients:
-  - item: red lentils, dry
-    qty: 180
-    unit: g
-    grocery_section: pantry
-  - item: diced tomato
-    qty: 1
-    unit: can
-    grocery_section: pantry
-  - item: garlic, minced
-    qty: 5
-    unit: g
-    grocery_section: produce
-  - item: curry powder
-    qty: 5
-    unit: g
-    grocery_section: pantry
+- item: red lentils, dry
+  qty: 180
+  unit: g
+  grocery_section: pantry
+- item: diced tomato
+  qty: 1
+  unit: can
+  grocery_section: pantry
+- item: garlic, minced
+  qty: 5
+  unit: g
+  grocery_section: produce
+- item: curry powder
+  qty: 5
+  unit: g
+  grocery_section: pantry
 steps:
-  - Simmer lentils with tomato, garlic, and curry until soft.
+- Simmer lentils with tomato, garlic, and curry until soft.
 notes:
-  - Add cilantro or lemon juice before serving.
+- Add cilantro or lemon juice before serving.
+meal_slots:
+- dinner
+- lunch
+- snack

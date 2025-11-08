@@ -9,39 +9,43 @@ macros_per_serving:
   carbs_g: 12
   fat_g: 4
 primary_carb:
-  - carrot
+- carrot
 protein_source: []
 veg:
-  - carrot
+- carrot
 allergens:
-  - soy
+- soy
 meal_types:
-  - side
+- side
 meal_freq_cap_per_week: 1
 prep_time_min: 5
 cook_time_min: 10
 batch_friendly: true
 reheat_method:
-  - microwave
+- microwave
 ingredients:
-  - item: carrots, sliced
-    qty: 454
-    unit: g
-    grocery_section: produce
-  - item: soy sauce
-    qty: 15
-    unit: g
-    grocery_section: pantry
-  - item: ginger, grated
-    qty: 5
-    unit: g
-    grocery_section: produce
-  - item: sesame oil
-    qty: 5
-    unit: g
-    grocery_section: oils
+- item: carrots, sliced
+  qty: 454
+  unit: g
+  grocery_section: produce
+- item: soy sauce
+  qty: 15
+  unit: g
+  grocery_section: pantry
+- item: ginger, grated
+  qty: 5
+  unit: g
+  grocery_section: produce
+- item: sesame oil
+  qty: 5
+  unit: g
+  grocery_section: oils
 steps:
-  - Sauté carrots with ginger and soy sauce until tender.
-  - Finish with sesame oil.
+- Sauté carrots with ginger and soy sauce until tender.
+- Finish with sesame oil.
 notes:
-  - Garnish with sesame seeds.
+- Garnish with sesame seeds.
+meal_slots:
+- dinner
+- lunch
+- snack

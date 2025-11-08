@@ -10,37 +10,40 @@ macros_per_serving:
   fat_g: 11
 primary_carb: []
 protein_source:
-  - chicken
+- chicken
 veg: []
 allergens: []
 meal_types:
-  - lunch
-  - dinner
+- lunch
+- dinner
 meal_freq_cap_per_week: 3
 prep_time_min: 15
 cook_time_min: 15
 batch_friendly: true
 reheat_method:
-  - skillet
-  - microwave
+- skillet
+- microwave
 ingredients:
-  - item: chicken breast
-    qty: 12
-    unit: oz
-    grocery_section: meat
-  - item: chipotle in adobo
-    qty: 1
-    unit: tbsp
-    grocery_section: international
-  - item: lime juice
-    qty: 1
-    unit: tbsp
-    grocery_section: produce
-  - item: olive oil
-    qty: 1
-    unit: tbsp
-    grocery_section: oils
+- item: chicken breast
+  qty: 12
+  unit: oz
+  grocery_section: meat
+- item: chipotle in adobo
+  qty: 1
+  unit: tbsp
+  grocery_section: international
+- item: lime juice
+  qty: 1
+  unit: tbsp
+  grocery_section: produce
+- item: olive oil
+  qty: 1
+  unit: tbsp
+  grocery_section: oils
 steps:
-  - Marinate chicken in chipotle, lime, oil; grill or roast.
+- Marinate chicken in chipotle, lime, oil; grill or roast.
 notes:
-  - Serve with lime rice, potatoes, or veg sides.
+- Serve with lime rice, potatoes, or veg sides.
+meal_slots:
+- dinner
+- lunch

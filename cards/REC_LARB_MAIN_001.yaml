@@ -9,51 +9,54 @@ macros_per_serving:
   carbs_g: 18
   fat_g: 18
 primary_carb:
-  - veg
+- veg
 protein_source:
-  - chicken
+- chicken
 veg:
-  - lettuce
-  - red onion
-  - herbs
+- lettuce
+- red onion
+- herbs
 allergens: []
 meal_types:
-  - lunch
-  - dinner
+- lunch
+- dinner
 meal_freq_cap_per_week: 3
 prep_time_min: 15
 cook_time_min: 15
 batch_friendly: true
 reheat_method:
-  - skillet
-  - microwave
+- skillet
+- microwave
 ingredients:
-  - item: ground chicken (93-99%)
-    qty: 12
-    unit: oz
-    grocery_section: meat
-  - item: red onion
-    qty: 2
-    unit: oz
-    grocery_section: produce
-  - item: fresh herbs (mint/cilantro)
-    qty: 1
-    unit: oz
-    grocery_section: produce
-  - item: fish sauce
-    qty: 1.5
-    unit: tbsp
-    grocery_section: condiments
-  - item: lime juice
-    qty: 2
-    unit: tbsp
-    grocery_section: produce
-  - item: lettuce leaves
-    qty: 6
-    unit: oz
-    grocery_section: produce
+- item: ground chicken (93-99%)
+  qty: 12
+  unit: oz
+  grocery_section: meat
+- item: red onion
+  qty: 2
+  unit: oz
+  grocery_section: produce
+- item: fresh herbs (mint/cilantro)
+  qty: 1
+  unit: oz
+  grocery_section: produce
+- item: fish sauce
+  qty: 1.5
+  unit: tbsp
+  grocery_section: condiments
+- item: lime juice
+  qty: 2
+  unit: tbsp
+  grocery_section: produce
+- item: lettuce leaves
+  qty: 6
+  unit: oz
+  grocery_section: produce
 steps:
-  - Brown chicken; season with lime, fish sauce, aromatics.
-  - Serve in lettuce cups with herbs.
+- Brown chicken; season with lime, fish sauce, aromatics.
+- Serve in lettuce cups with herbs.
 notes:
-  - Pair with potato or veg sides to hit calorie targets.
+- Pair with potato or veg sides to hit calorie targets.
+meal_slots:
+- dinner
+- lunch

@@ -9,48 +9,51 @@ macros_per_serving:
   carbs_g: 18
   fat_g: 28
 primary_carb:
-  - veg
+- veg
 protein_source:
-  - chicken
+- chicken
 veg:
-  - romaine
-  - cherry tomato
+- romaine
+- cherry tomato
 allergens:
-  - dairy
-  - egg
-  - fish
+- dairy
+- egg
+- fish
 meal_types:
-  - lunch
-  - dinner
+- lunch
+- dinner
 meal_freq_cap_per_week: 3
 prep_time_min: 15
 cook_time_min: 10
 batch_friendly: true
 reheat_method:
-  - cold
+- cold
 ingredients:
-  - item: chicken breast
-    qty: 12
-    unit: oz
-    grocery_section: meat
-  - item: romaine lettuce
-    qty: 8
-    unit: oz
-    grocery_section: produce
-  - item: cherry tomatoes
-    qty: 4
-    unit: oz
-    grocery_section: produce
-  - item: caesar dressing (light)
-    qty: 4
-    unit: tbsp
-    grocery_section: condiments
-  - item: parmesan cheese
-    qty: 1.5
-    unit: oz
-    grocery_section: dairy
+- item: chicken breast
+  qty: 12
+  unit: oz
+  grocery_section: meat
+- item: romaine lettuce
+  qty: 8
+  unit: oz
+  grocery_section: produce
+- item: cherry tomatoes
+  qty: 4
+  unit: oz
+  grocery_section: produce
+- item: caesar dressing (light)
+  qty: 4
+  unit: tbsp
+  grocery_section: condiments
+- item: parmesan cheese
+  qty: 1.5
+  unit: oz
+  grocery_section: dairy
 steps:
-  - Grill or pan-sear chicken, slice.
-  - Toss romaine, tomatoes, dressing, parmesan; top with chicken.
+- Grill or pan-sear chicken, slice.
+- Toss romaine, tomatoes, dressing, parmesan; top with chicken.
 notes:
-  - Adjust dressing or add/skip croutons to fine-tune calories.
+- Adjust dressing or add/skip croutons to fine-tune calories.
+meal_slots:
+- dinner
+- lunch

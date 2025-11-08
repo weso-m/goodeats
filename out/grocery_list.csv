@@ -1,37 +1,35 @@
 item,qty,unit,grocery_section
-english muffin,4.0,whole,bakery
-cheddar cheese slice,4.0,slice,dairy
-egg,4.0,whole,dairy
-sour cream,30,g,dairy
-soy sauce / seasoning,1.5,tbsp,international
-chicken breast,227,g,meat
-chicken thighs,227,g,meat
-ground beef (90% lean),227,g,meat
-ground pork (lean),6.0,oz,meat
-olive oil,5,g,oils
-sesame oil,2,g,oils
-chicken broth,0.5,quart,pantry
-curry powder,2,g,pantry
-diced tomato,0.5,can,pantry
-"egg noodles, dry",40,g,pantry
-fajita seasoning,5,g,pantry
-"red lentils, dry",90,g,pantry
-salt,1,g,pantry
-sambal oelek,10,g,pantry
-soy sauce,12,g,pantry
-water,185,g,pantry
-"white rice, dry",185,g,pantry
-"bell pepper, sliced",0.5,whole,produce
-cabbage,6.0,oz,produce
-carrot,2.0,oz,produce
-"carrot, chopped",1.0,whole,produce
-"carrots, sliced",227,g,produce
-"celery, chopped",1.0,stalk,produce
-chives,2,g,produce
-"garlic, minced",2,g,produce
-"ginger, grated",2,g,produce
-"onion, diced",0.5,whole,produce
-"onion, sliced",0.5,whole,produce
-russet potato,1.0,whole,produce
-spinach,0.5,bunch,produce
-shrimp,6.0,oz,seafood
+english muffin,5.0,whole,bakery
+cheddar cheese slice,5.0,slice,dairy
+egg,5.0,whole,dairy
+sour cream,150,g,dairy
+chicken breast,454,g,meat
+chicken thighs,454,g,meat
+ground beef (90% lean),1135,g,meat
+olive oil,10,g,oils
+sesame oil,20,g,oils
+chicken broth,1.0,quart,pantry
+chili powder,8,g,pantry
+curry powder,10,g,pantry
+diced tomato,2.0,can,pantry
+diced tomatoes,1.0,can,pantry
+"egg noodles, dry",80,g,pantry
+fajita seasoning,15,g,pantry
+"kidney beans, canned",1.0,can,pantry
+"red lentils, dry",360,g,pantry
+salt,5,g,pantry
+sambal oelek,20,g,pantry
+soy sauce,70,g,pantry
+water,555,g,pantry
+"white rice, dry",555,g,pantry
+"bell pepper, sliced",1.5,whole,produce
+"carrot, chopped",2.0,whole,produce
+"carrots, sliced",1816,g,produce
+"celery, chopped",2.0,stalk,produce
+chives,12,g,produce
+"garlic, minced",10,g,produce
+"ginger, grated",20,g,produce
+"onion, diced",2.0,whole,produce
+"onion, sliced",1.5,whole,produce
+russet potato,5.0,whole,produce
+spinach,2.5,bunch,produce

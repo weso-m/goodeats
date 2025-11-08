@@ -9,29 +9,33 @@ macros_per_serving:
   carbs_g: 48
   fat_g: 2
 primary_carb:
-  - potato
+- potato
 protein_source: []
 veg: []
 allergens: []
 meal_types:
-  - side
+- side
 meal_freq_cap_per_week: 5
 prep_time_min: 5
 cook_time_min: 25
 batch_friendly: true
 reheat_method:
-  - air_fryer
-  - oven
+- air_fryer
+- oven
 ingredients:
-  - item: russet potato
-    qty: 500
-    unit: g
-    grocery_section: produce
-  - item: olive oil
-    qty: 0.5
-    unit: tbsp
-    grocery_section: oils
+- item: russet potato
+  qty: 500
+  unit: g
+  grocery_section: produce
+- item: olive oil
+  qty: 0.5
+  unit: tbsp
+  grocery_section: oils
 steps:
-  - Cube, season, roast/air-fry until crisp.
+- Cube, season, roast/air-fry until crisp.
 notes:
-  - Adjust portion to tune carbs.
+- Adjust portion to tune carbs.
+meal_slots:
+- dinner
+- lunch
+- snack
